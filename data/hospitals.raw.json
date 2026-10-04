@@ -1,0 +1,1115 @@
+[
+  {
+    "osmType": "node",
+    "osmId": 7664032196,
+    "name": "Anand Niketan Hospital",
+    "lat": 18.98878,
+    "lng": 72.82304,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital",
+      "opening_hours": "24/7"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7047933154,
+    "name": "Aryan Hospital and Icu",
+    "lat": 18.98986,
+    "lng": 72.84122,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7066505743,
+    "name": "Asmi Arthroscopy and Sports Medicine Institute",
+    "lat": 19.00513,
+    "lng": 72.84859,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7664032218,
+    "name": "Astha Nursing Home",
+    "lat": 18.98815,
+    "lng": 72.83769,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 206806614,
+    "name": "Atmasingh Jassasingh Bankebihar Municipal ENT Hospital",
+    "lat": 18.9348,
+    "lng": 72.83133,
+    "geometryType": "Polygon",
+    "footprintM2": 1165.2,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 353799754,
+    "name": "Balaji Hospital",
+    "lat": 18.97723,
+    "lng": 72.83536,
+    "geometryType": "Polygon",
+    "footprintM2": 2292.5,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7047557038,
+    "name": "Banaji Eyesurgery and Laser Center",
+    "lat": 18.93584,
+    "lng": 72.83324,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7607557871,
+    "name": "BMC Eye Hospital ,Kamathipura",
+    "lat": 18.96198,
+    "lng": 72.82651,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 46715024,
+    "name": "Bombay Hospital",
+    "lat": 18.94083,
+    "lng": 72.82803,
+    "geometryType": "Polygon",
+    "footprintM2": 11962.4,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 207324961,
+    "name": "Bombay Hospital and Medical Research Center",
+    "lat": 18.94101,
+    "lng": 72.82743,
+    "geometryType": "Polygon",
+    "footprintM2": 1447.2,
+    "tags": {
+      "operator:type": "private",
+      "healthcare": "hospital",
+      "amenity": "hospital",
+      "website": "https://www.bombayhospital.com/"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7225067284,
+    "name": "BYL Nair hospital",
+    "lat": 18.97422,
+    "lng": 72.82192,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 6884803664,
+    "name": "Cama and Albles Hospital - Abdul Fazalbhoy Blood Bank",
+    "lat": 18.94208,
+    "lng": 72.83241,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "operator:type": "government",
+      "healthcare": "hospital",
+      "opening_hours": "24/7"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 207376648,
+    "name": "Cama Hospital",
+    "lat": 18.94225,
+    "lng": 72.8321,
+    "geometryType": "Polygon",
+    "footprintM2": 9400.0,
+    "tags": {
+      "emergency": "yes",
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 288426702,
+    "name": "Conwest And Manjula S. Badani Jain Hospital",
+    "lat": 18.95475,
+    "lng": 72.8211,
+    "geometryType": "Polygon",
+    "footprintM2": 511.7,
+    "tags": {
+      "healthcare": "hospital",
+      "healthcare:speciality": "general",
+      "amenity": "hospital",
+      "website": "https://www.cmjhospital.in/",
+      "addr:street": "Kotachi Wadi"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7206288300,
+    "name": "Dawood Multispeciality Nursing Home",
+    "lat": 18.96664,
+    "lng": 72.82892,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "emergency": "yes",
+      "operator": "sabusiddique",
+      "operator:type": "public",
+      "healthcare": "hospital",
+      "healthcare:speciality": "gynaecology;surgery;paediatrics;orthopaedics;general",
+      "amenity": "hospital",
+      "phone": "+91 22 23091413, +91 22 23051797",
+      "addr:street": "Memni Buidling, Dimtimakar Road",
+      "opening_hours": "09:30-22:30, We off"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 1311520615,
+    "name": "Dawood Multispeciality Nursing Home",
+    "lat": 18.96652,
+    "lng": 72.82899,
+    "geometryType": "Polygon",
+    "footprintM2": 1014.6,
+    "tags": {
+      "healthcare": "hospital",
+      "healthcare:speciality": "gynaecology;surgery;paediatrics;orthopaedics",
+      "addr:street": "Dimtimakar Road"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7054447906,
+    "name": "Dholkawalla Maternity Home",
+    "lat": 18.95271,
+    "lng": 72.83378,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "healthcare:speciality": "gynaecology",
+      "amenity": "hospital",
+      "addr:street": "Muhammad Ali Road"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 8817020641,
+    "name": "Dr Mudit Khanna",
+    "lat": 18.97523,
+    "lng": 72.82376,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "healthcare:speciality": "Arthroplasty;Arthroscopy;Hip_Replacement;Knee_Replacement;Trauma",
+      "amenity": "hospital",
+      "website": "https://www.drmuditkhanna.com/",
+      "addr:street": "Doctor Anandrao Nair Marg, Near Agripada Police Station Mumbai Central East, Agripada"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 430223744,
+    "name": "Dr. Babasaheb Ambedkar Memorial Central Railway Hospital",
+    "lat": 18.98017,
+    "lng": 72.83353,
+    "geometryType": "Polygon",
+    "footprintM2": 17944.7,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7664032187,
+    "name": "Dr. Sanjay Shah Hospital",
+    "lat": 18.95919,
+    "lng": 72.82386,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7664032203,
+    "name": "Dr. Shantilal Oza Hospital",
+    "lat": 18.96751,
+    "lng": 72.83875,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7044466685,
+    "name": "Dr. Yash Shah Total Eye Care",
+    "lat": 18.95768,
+    "lng": 72.82132,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7073672865,
+    "name": "Dr.Pai Dhungat Maternity and Nursing Home",
+    "lat": 18.95719,
+    "lng": 72.82291,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7226727393,
+    "name": "General Hospital, Janabai Rokade",
+    "lat": 18.95168,
+    "lng": 72.83883,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "emergency": "yes",
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 5099872961,
+    "name": "Gleneagles Hospital Super Speciality and Transplant Center",
+    "lat": 18.99944,
+    "lng": 72.8405,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "emergency": "yes",
+      "operator": "Gleneagles Hospital",
+      "operator:type": "private",
+      "healthcare": "hospital",
+      "amenity": "hospital",
+      "website": "https://www.gleneagleshospitals.co.in",
+      "addr:street": "Dr Ernest Borges Marg"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7433481438,
+    "name": "Habib Hospital",
+    "lat": 18.95969,
+    "lng": 72.8368,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "healthcare:speciality": "general;paediatrics;gynaecology;orthopaedics",
+      "amenity": "hospital",
+      "phone": "+91-22-23788100",
+      "website": "http://habibhospital.com/"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 113576203,
+    "name": "Haffkine Institute For Training, Research & Testing",
+    "lat": 19.00255,
+    "lng": 72.84545,
+    "geometryType": "Polygon",
+    "footprintM2": 91538.2,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital",
+      "website": "http://www.haffkineinstitute.org/",
+      "addr:street": "Acharya Donde Marg"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 1329415478,
+    "name": "Head And Neck Cancer Institute Of India",
+    "lat": 18.97027,
+    "lng": 72.8457,
+    "geometryType": "Polygon",
+    "footprintM2": 1646.6,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7055759633,
+    "name": "Ipc Heart Care",
+    "lat": 18.99255,
+    "lng": 72.82434,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 803325198,
+    "name": "J. J. Hospital",
+    "lat": 18.96383,
+    "lng": 72.83446,
+    "geometryType": "Polygon",
+    "footprintM2": 160461.2,
+    "tags": {
+      "beds": "2844",
+      "healthcare": "hospital",
+      "amenity": "hospital",
+      "phone": "+912223735555",
+      "website": "https://ggmcjjh.com/"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 1121494180,
+    "name": "Jagjivan Ram Hospital",
+    "lat": 18.97043,
+    "lng": 72.82406,
+    "geometryType": "Polygon",
+    "footprintM2": 10231.8,
+    "tags": {
+      "emergency": "yes",
+      "healthcare": "hospital",
+      "amenity": "hospital",
+      "phone": "+91 22 6764 3224",
+      "addr:street": "Maratha Mandir Marg, RBI Staff Colony"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 430029987,
+    "name": "K B H B Charitable Ophthalmic and E.N.T Hospital",
+    "lat": 19.00235,
+    "lng": 72.8404,
+    "geometryType": "Polygon",
+    "footprintM2": 9521.5,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7064867159,
+    "name": "K B Haji Bachooali Charitable Ophthalmic and E N T H",
+    "lat": 19.00308,
+    "lng": 72.84023,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7225067144,
+    "name": "Kasturba Hospital",
+    "lat": 18.98419,
+    "lng": 72.83003,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 1411712168,
+    "name": "King George V Infimary",
+    "lat": 18.98869,
+    "lng": 72.82317,
+    "geometryType": "Polygon",
+    "footprintM2": 4755.5,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 207319558,
+    "name": "Lady Willingdon Building",
+    "lat": 18.94282,
+    "lng": 72.82977,
+    "geometryType": "Polygon",
+    "footprintM2": 2605.7,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7664032211,
+    "name": "Laxmi Niwas General Hospital",
+    "lat": 19.00818,
+    "lng": 72.83548,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 13633845989,
+    "name": "M J Speciality Clinic - Dr Manoj Jain",
+    "lat": 19.00094,
+    "lng": 72.83869,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "healthcare:speciality": "orthopaedic_and_spine_surgeon",
+      "amenity": "hospital",
+      "website": "https://www.drmanojjainortho.com/",
+      "addr:street": "Royal imperia building, Parmar guruji Marg, lane, next to Bharat bank, opposite to global hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7059192086,
+    "name": "M.H. Saboo Siddique Maternity and General Hospital - Masjid",
+    "lat": 18.9596,
+    "lng": 72.83312,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "emergency": "yes",
+      "healthcare": "hospital",
+      "healthcare:speciality": "gynaecology;general",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 113561019,
+    "name": "Mahatma Gandhi Memorial Hospital",
+    "lat": 18.99711,
+    "lng": 72.84207,
+    "geometryType": "Polygon",
+    "footprintM2": 36528.9,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 353772277,
+    "name": "Maru Hospital",
+    "lat": 18.9983,
+    "lng": 72.83702,
+    "geometryType": "Polygon",
+    "footprintM2": 209.2,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7433829905,
+    "name": "Masina Cancer Center",
+    "lat": 18.97495,
+    "lng": 72.83574,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "healthcare:speciality": "oncology",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 1289053364,
+    "name": "Masina Hospital",
+    "lat": 18.9747,
+    "lng": 72.83594,
+    "geometryType": "Polygon",
+    "footprintM2": 28876.8,
+    "tags": {
+      "emergency": "yes",
+      "healthcare": "hospital",
+      "healthcare:speciality": "gynaecology;orthopaedics;plastic_surgery;psychiatry;paediatrics;oncology",
+      "amenity": "hospital",
+      "website": "https://www.masinahospital.com/",
+      "addr:street": "Sant Savata Marg"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7664032244,
+    "name": "Mhaskar Hospital",
+    "lat": 18.9922,
+    "lng": 72.82944,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7069814001,
+    "name": "Nagori Clinic and Nursing Home",
+    "lat": 18.96851,
+    "lng": 72.8286,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital",
+      "addr:street": "Maulana Azad Road North"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7433682214,
+    "name": "Nagpada Police Hospital",
+    "lat": 18.96606,
+    "lng": 72.83191,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7664032237,
+    "name": "Nair Hospital",
+    "lat": 18.97302,
+    "lng": 72.82191,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7225067213,
+    "name": "Nair Hospital Dental College",
+    "lat": 18.97119,
+    "lng": 72.82097,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7047598027,
+    "name": "Nirmala Maternity and Surgical Hospital with Polyclinic",
+    "lat": 18.98689,
+    "lng": 72.83069,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7207893890,
+    "name": "Noor Hospital",
+    "lat": 18.95389,
+    "lng": 72.83346,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "healthcare:speciality": "general;gynaecology",
+      "amenity": "hospital",
+      "addr:street": "Mohammed Ali Road"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 618791586,
+    "name": "Nowrosjee Wadia Maternity Hospital",
+    "lat": 19.00381,
+    "lng": 72.84249,
+    "geometryType": "Polygon",
+    "footprintM2": 40937.2,
+    "tags": {
+      "healthcare": "hospital",
+      "healthcare:speciality": "paediatrics",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7066371677,
+    "name": "Parel Institute Of Orthopaedic Specialities",
+    "lat": 19.00563,
+    "lng": 72.84495,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7050575276,
+    "name": "Prince Aly Khan Hospital",
+    "lat": 18.97078,
+    "lng": 72.83661,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "emergency": "yes",
+      "healthcare": "hospital",
+      "healthcare:speciality": "general;gynaecology",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7433749757,
+    "name": "Rajshree Maternity",
+    "lat": 18.97242,
+    "lng": 72.83575,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "healthcare:speciality": "gynaecology",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7664032233,
+    "name": "Reliance Health Ventures Limited Hospital",
+    "lat": 18.93681,
+    "lng": 72.84034,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7051070010,
+    "name": "Reliance Life Sciences Pvt. Ltd",
+    "lat": 19.00503,
+    "lng": 72.82256,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7070054643,
+    "name": "Sai Raj Hospital",
+    "lat": 18.97723,
+    "lng": 72.8486,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 860315256,
+    "name": "Saifee Ambulance",
+    "lat": 18.95994,
+    "lng": 72.8315,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7074541583,
+    "name": "Sankalp Eye Care Centre",
+    "lat": 18.98934,
+    "lng": 72.83136,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 12603333590,
+    "name": "Sattva Pediatric - Dr. Rishabh K. Shah",
+    "lat": 18.98992,
+    "lng": 72.84148,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "operator": "Dr. Rishabh K. Shah",
+      "operator:type": "private",
+      "healthcare": "hospital",
+      "healthcare:speciality": "paediatrics;vaccination;neonatology;child_psychiatry",
+      "amenity": "hospital",
+      "website": "https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LE_LMTbILso1YLRSNagwTko1T04zNLO0MDAxNk0ytTKoMDExSzY3Tk42TkkyTDJMM_cSKE4sKSlLVChITclMLCnKTAYA7LAV0Q&q=sattva+pediatric&oq=sattva+pediat&gs_lcrp=EgZjaHJvbWUqDQgBEC4YrwEYxwEYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwE",
+      "addr:street": "G D Ambedkar Marg (Parel Tank Road)"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 12555159227,
+    "name": "siddiqui",
+    "lat": 18.9667,
+    "lng": 72.82882,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "emergency": "yes",
+      "operator": "iffat",
+      "operator:type": "public",
+      "healthcare": "hospital",
+      "healthcare:speciality": "dentist;ophthalmology;orthodontics;dermatology;biology;gynaecology;radiology;otolaryngology;orthopaedics;internal;osteopathy;plastic_surgery;chiropractic;physiotherapy;urology;general;cardiology;surgery;neurology;emergency;psychiatry;traditional_chinese_m",
+      "amenity": "hospital",
+      "addr:street": "Dimtimakar Road",
+      "opening_hours": "Mo-Su 09:00-21:00"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 288446227,
+    "name": "Sir H. N. Hospital & Research Centre;Sir H.N Reliance foundation hospital",
+    "lat": 18.95899,
+    "lng": 72.82014,
+    "geometryType": "Polygon",
+    "footprintM2": 2578.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital",
+      "addr:street": "Raja Ram Mohan Roy Road (Charni Road)"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7073944671,
+    "name": "Smt. Kamladevi Gauridutt Mittal Ayurvedic Hospital",
+    "lat": 18.94984,
+    "lng": 72.8201,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7080141269,
+    "name": "Smt.Laxmiben Dhanji Devshi Health Centre",
+    "lat": 18.95924,
+    "lng": 72.83835,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 50884815,
+    "name": "St George Hospital",
+    "lat": 18.9407,
+    "lng": 72.83787,
+    "geometryType": "Polygon",
+    "footprintM2": 2124.4,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 107441511,
+    "name": "St George Hospital",
+    "lat": 18.94175,
+    "lng": 72.83796,
+    "geometryType": "Polygon",
+    "footprintM2": 74644.1,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7664032188,
+    "name": "Suryakant Wagal Maternity Hospital",
+    "lat": 18.95139,
+    "lng": 72.82365,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 113570522,
+    "name": "Tata Memorial Cancer Hospital",
+    "lat": 19.00565,
+    "lng": 72.84307,
+    "geometryType": "Polygon",
+    "footprintM2": 4892.9,
+    "tags": {
+      "healthcare": "hospital",
+      "healthcare:speciality": "radiology",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7052388277,
+    "name": "Tata Memorial Hospital",
+    "lat": 19.00498,
+    "lng": 72.84321,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "operator:type": "private",
+      "amenity": "hospital",
+      "website": "www.tmc.gov.in"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7433481437,
+    "name": "The Muslim Ambulance Society Diagnostic Center",
+    "lat": 18.95401,
+    "lng": 72.83409,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "emergency": "no",
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7207893889,
+    "name": "Tibbia Hospital",
+    "lat": 18.96667,
+    "lng": 72.82844,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "clinic",
+      "healthcare:speciality": "general",
+      "amenity": "hospital",
+      "addr:street": "Duncan Road, Dalal Estate, Kamathipura"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 356207236,
+    "name": "umerkhadi hospital",
+    "lat": 18.96139,
+    "lng": 72.83659,
+    "geometryType": "Polygon",
+    "footprintM2": 373.4,
+    "tags": {
+      "emergency": "yes",
+      "healthcare": "hospital",
+      "healthcare:speciality": "gynaecology;radiology;orthodontics;emergency;maternity",
+      "amenity": "hospital",
+      "addr:street": "A N Surve Marg (Umerkhadi Road)"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 1289063015,
+    "name": "Wockhardt Hospitals, South Mumbai",
+    "lat": 18.97521,
+    "lng": 72.82397,
+    "geometryType": "Polygon",
+    "footprintM2": 3673.9,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7055428168,
+    "name": "Yogeshwar Surgical Clinic and Nursing Home - Mumbai",
+    "lat": 18.95734,
+    "lng": 72.82484,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7072544668,
+    "name": "Zain Eye Care",
+    "lat": 18.9415,
+    "lng": 72.82784,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital",
+      "website": "http://zaineyecare.net/"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 5193467221,
+    "name": null,
+    "lat": 18.9535,
+    "lng": 72.83714,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 7207893891,
+    "name": null,
+    "lat": 18.94561,
+    "lng": 72.83454,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "emergency": "no",
+      "healthcare": "laboratory",
+      "healthcare:speciality": "blood_check",
+      "amenity": "hospital",
+      "phone": "+91 22 2344 8024"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 8797105668,
+    "name": null,
+    "lat": 18.97648,
+    "lng": 72.84161,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "node",
+    "osmId": 10616180012,
+    "name": null,
+    "lat": 18.97834,
+    "lng": 72.82711,
+    "geometryType": "Point",
+    "footprintM2": 0.0,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 851756494,
+    "name": null,
+    "lat": 18.96756,
+    "lng": 72.8388,
+    "geometryType": "Polygon",
+    "footprintM2": 509.3,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  },
+  {
+    "osmType": "way",
+    "osmId": 207376654,
+    "name": "गोकुळदास तेजपाल रुग्णालय",
+    "lat": 18.94477,
+    "lng": 72.8318,
+    "geometryType": "Polygon",
+    "footprintM2": 21785.7,
+    "tags": {
+      "healthcare": "hospital",
+      "amenity": "hospital"
+    }
+  }
+]

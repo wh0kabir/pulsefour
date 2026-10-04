@@ -1,0 +1,910 @@
+{
+  "stations": [
+    {
+      "name": "Ambedkar Nagar",
+      "osm": "node/3806743188",
+      "lat": 19.001592,
+      "lng": 72.844227
+    },
+    {
+      "name": "Byculla",
+      "osm": "node/2630075001",
+      "lat": 18.976622,
+      "lng": 72.832794
+    },
+    {
+      "name": "Chhatrapati Shivaji Maharaj Terminus",
+      "osm": "node/13207029322",
+      "lat": 18.940833,
+      "lng": 72.831861
+    },
+    {
+      "name": "Chinchpokli",
+      "osm": "node/3501418211",
+      "lat": 18.987198,
+      "lng": 72.832672
+    },
+    {
+      "name": "Churchgate",
+      "osm": "node/4260136290",
+      "lat": 18.93548,
+      "lng": 72.827174
+    },
+    {
+      "name": "Churchgate",
+      "osm": "node/13207029319",
+      "lat": 18.931495,
+      "lng": 72.826939
+    },
+    {
+      "name": "Cotton Green",
+      "osm": "node/700886403",
+      "lat": 18.987187,
+      "lng": 72.843896
+    },
+    {
+      "name": "Currey Road",
+      "osm": "node/2444001671",
+      "lat": 18.993749,
+      "lng": 72.832856
+    },
+    {
+      "name": "Dockyard Road",
+      "osm": "node/2443092123",
+      "lat": 18.967477,
+      "lng": 72.844548
+    },
+    {
+      "name": "Girgaon",
+      "osm": "node/13207029324",
+      "lat": 18.952102,
+      "lng": 72.822206
+    },
+    {
+      "name": "Hutatma Chowk",
+      "osm": "node/13207029320",
+      "lat": 18.934185,
+      "lng": 72.832504
+    },
+    {
+      "name": "Jagannath Shankar Sheth Metro",
+      "osm": "node/13192130534",
+      "lat": 18.969992,
+      "lng": 72.82118
+    },
+    {
+      "name": "Kalbadevi",
+      "osm": "node/13207029323",
+      "lat": 18.946329,
+      "lng": 72.827193
+    },
+    {
+      "name": "Lower Parel",
+      "osm": "node/621911847",
+      "lat": 18.99568,
+      "lng": 72.830276
+    },
+    {
+      "name": "Lower Parel",
+      "osm": "node/6498408219",
+      "lat": 18.99312,
+      "lng": 72.83147
+    },
+    {
+      "name": "Mahalaxmi",
+      "osm": "node/4264478427",
+      "lat": 18.98252,
+      "lng": 72.82422
+    },
+    {
+      "name": "Mahalaxmi",
+      "osm": "node/13192130535",
+      "lat": 18.979467,
+      "lng": 72.825401
+    },
+    {
+      "name": "Marine Lines",
+      "osm": "node/2630075006",
+      "lat": 18.945764,
+      "lng": 72.823719
+    },
+    {
+      "name": "Masjid",
+      "osm": "node/12171122260",
+      "lat": 18.952295,
+      "lng": 72.838177
+    },
+    {
+      "name": "Mint Colony",
+      "osm": "node/3806743195",
+      "lat": 18.994514,
+      "lng": 72.843309
+    },
+    {
+      "name": "Mumbai CSMT",
+      "osm": "node/12176277888",
+      "lat": 18.940493,
+      "lng": 72.835786
+    },
+    {
+      "name": "Prabhadevi",
+      "osm": "node/3462327239",
+      "lat": 19.007472,
+      "lng": 72.835897
+    },
+    {
+      "name": "Reay Road",
+      "osm": "node/2443096202",
+      "lat": 18.977551,
+      "lng": 72.844101
+    },
+    {
+      "name": "Sandhurst Road",
+      "osm": "node/2178163576",
+      "lat": 18.960924,
+      "lng": 72.839372
+    },
+    {
+      "name": "Sant Gadge Maharaj Chowk",
+      "osm": "node/3806743194",
+      "lat": 18.983092,
+      "lng": 72.828587
+    },
+    {
+      "name": "Science Centre",
+      "osm": "node/13192130536",
+      "lat": 18.990895,
+      "lng": 72.821352
+    }
+  ],
+  "footbridges": [
+    {
+      "name": null,
+      "osm": "way/42321417",
+      "highway": "footway",
+      "lat": 18.970865,
+      "lng": 72.819363
+    },
+    {
+      "name": null,
+      "osm": "way/49685172",
+      "highway": "footway",
+      "lat": 19.008271,
+      "lng": 72.836777
+    },
+    {
+      "name": null,
+      "osm": "way/55783466",
+      "highway": "footway",
+      "lat": 18.974363,
+      "lng": 72.83277
+    },
+    {
+      "name": null,
+      "osm": "way/55783469",
+      "highway": "footway",
+      "lat": 18.977189,
+      "lng": 72.832855
+    },
+    {
+      "name": null,
+      "osm": "way/55784547",
+      "highway": "footway",
+      "lat": 18.965452,
+      "lng": 72.844054
+    },
+    {
+      "name": null,
+      "osm": "way/55788478",
+      "highway": "footway",
+      "lat": 18.976357,
+      "lng": 72.844494
+    },
+    {
+      "name": null,
+      "osm": "way/72272670",
+      "highway": "footway",
+      "lat": 18.955776,
+      "lng": 72.838249
+    },
+    {
+      "name": null,
+      "osm": "way/89119083",
+      "highway": "footway",
+      "lat": 18.950405,
+      "lng": 72.83827
+    },
+    {
+      "name": null,
+      "osm": "way/89121954",
+      "highway": "footway",
+      "lat": 18.95074,
+      "lng": 72.838148
+    },
+    {
+      "name": null,
+      "osm": "way/89121957",
+      "highway": "footway",
+      "lat": 18.952452,
+      "lng": 72.838235
+    },
+    {
+      "name": null,
+      "osm": "way/107441508",
+      "highway": "footway",
+      "lat": 18.945134,
+      "lng": 72.83767
+    },
+    {
+      "name": null,
+      "osm": "way/107441515",
+      "highway": "footway",
+      "lat": 18.942454,
+      "lng": 72.835183
+    },
+    {
+      "name": null,
+      "osm": "way/107602113",
+      "highway": "footway",
+      "lat": 18.93449,
+      "lng": 72.827687
+    },
+    {
+      "name": null,
+      "osm": "way/107602116",
+      "highway": "footway",
+      "lat": 18.938262,
+      "lng": 72.826901
+    },
+    {
+      "name": null,
+      "osm": "way/107607529",
+      "highway": "footway",
+      "lat": 18.95006,
+      "lng": 72.819672
+    },
+    {
+      "name": null,
+      "osm": "way/107607539",
+      "highway": "footway",
+      "lat": 18.946347,
+      "lng": 72.823343
+    },
+    {
+      "name": null,
+      "osm": "way/107607541",
+      "highway": "footway",
+      "lat": 18.942195,
+      "lng": 72.826058
+    },
+    {
+      "name": null,
+      "osm": "way/107607543",
+      "highway": "footway",
+      "lat": 18.944655,
+      "lng": 72.82456
+    },
+    {
+      "name": null,
+      "osm": "way/107607544",
+      "highway": "footway",
+      "lat": 18.939731,
+      "lng": 72.826609
+    },
+    {
+      "name": null,
+      "osm": "way/107607549",
+      "highway": "footway",
+      "lat": 18.945753,
+      "lng": 72.823719
+    },
+    {
+      "name": null,
+      "osm": "way/236364114",
+      "highway": "steps",
+      "lat": 19.008221,
+      "lng": 72.837014
+    },
+    {
+      "name": null,
+      "osm": "way/236364117",
+      "highway": "steps",
+      "lat": 19.007712,
+      "lng": 72.836026
+    },
+    {
+      "name": null,
+      "osm": "way/236364120",
+      "highway": "footway",
+      "lat": 19.007522,
+      "lng": 72.836241
+    },
+    {
+      "name": null,
+      "osm": "way/259575720",
+      "highway": "footway",
+      "lat": 18.996125,
+      "lng": 72.830093
+    },
+    {
+      "name": null,
+      "osm": "way/323879903",
+      "highway": "footway",
+      "lat": 18.982269,
+      "lng": 72.824415
+    },
+    {
+      "name": null,
+      "osm": "way/331016398",
+      "highway": "footway",
+      "lat": 18.935099,
+      "lng": 72.827286
+    },
+    {
+      "name": null,
+      "osm": "way/343275235",
+      "highway": "footway",
+      "lat": 18.98833,
+      "lng": 72.832785
+    },
+    {
+      "name": null,
+      "osm": "way/343275238",
+      "highway": "footway",
+      "lat": 18.98809,
+      "lng": 72.832783
+    },
+    {
+      "name": null,
+      "osm": "way/369464220",
+      "highway": "footway",
+      "lat": 19.001783,
+      "lng": 72.841139
+    },
+    {
+      "name": null,
+      "osm": "way/427203702",
+      "highway": "footway",
+      "lat": 18.976085,
+      "lng": 72.832779
+    },
+    {
+      "name": null,
+      "osm": "way/427265490",
+      "highway": "footway",
+      "lat": 18.98553,
+      "lng": 72.842055
+    },
+    {
+      "name": null,
+      "osm": "way/427265499",
+      "highway": "footway",
+      "lat": 18.987297,
+      "lng": 72.843836
+    },
+    {
+      "name": null,
+      "osm": "way/427265501",
+      "highway": "footway",
+      "lat": 18.98558,
+      "lng": 72.842242
+    },
+    {
+      "name": null,
+      "osm": "way/427265502",
+      "highway": "footway",
+      "lat": 18.986828,
+      "lng": 72.843224
+    },
+    {
+      "name": null,
+      "osm": "way/427480559",
+      "highway": "footway",
+      "lat": 18.95063,
+      "lng": 72.820101
+    },
+    {
+      "name": null,
+      "osm": "way/427480564",
+      "highway": "footway",
+      "lat": 18.951524,
+      "lng": 72.818916
+    },
+    {
+      "name": null,
+      "osm": "way/430179210",
+      "highway": "footway",
+      "lat": 18.995008,
+      "lng": 72.832866
+    },
+    {
+      "name": null,
+      "osm": "way/430179211",
+      "highway": "footway",
+      "lat": 18.995037,
+      "lng": 72.832855
+    },
+    {
+      "name": null,
+      "osm": "way/430218067",
+      "highway": "footway",
+      "lat": 18.983569,
+      "lng": 72.824518
+    },
+    {
+      "name": null,
+      "osm": "way/430218068",
+      "highway": "footway",
+      "lat": 18.982554,
+      "lng": 72.824291
+    },
+    {
+      "name": null,
+      "osm": "way/430218070",
+      "highway": "footway",
+      "lat": 18.988304,
+      "lng": 72.833033
+    },
+    {
+      "name": null,
+      "osm": "way/625809291",
+      "highway": "footway",
+      "lat": 18.999565,
+      "lng": 72.848221
+    },
+    {
+      "name": null,
+      "osm": "way/625809296",
+      "highway": "footway",
+      "lat": 18.981677,
+      "lng": 72.84629
+    },
+    {
+      "name": null,
+      "osm": "way/647133456",
+      "highway": "steps",
+      "lat": 18.942519,
+      "lng": 72.835278
+    },
+    {
+      "name": null,
+      "osm": "way/658691818",
+      "highway": "footway",
+      "lat": 18.986113,
+      "lng": 72.832928
+    },
+    {
+      "name": null,
+      "osm": "way/662566432",
+      "highway": "steps",
+      "lat": 18.996889,
+      "lng": 72.831228
+    },
+    {
+      "name": null,
+      "osm": "way/663712835",
+      "highway": "steps",
+      "lat": 19.008155,
+      "lng": 72.83713
+    },
+    {
+      "name": null,
+      "osm": "way/987803973",
+      "highway": "steps",
+      "lat": 18.942251,
+      "lng": 72.825974
+    },
+    {
+      "name": null,
+      "osm": "way/987803974",
+      "highway": "steps",
+      "lat": 18.942127,
+      "lng": 72.825731
+    },
+    {
+      "name": null,
+      "osm": "way/988125056",
+      "highway": "footway",
+      "lat": 18.938387,
+      "lng": 72.827093
+    },
+    {
+      "name": null,
+      "osm": "way/988125062",
+      "highway": "footway",
+      "lat": 18.939745,
+      "lng": 72.826392
+    },
+    {
+      "name": null,
+      "osm": "way/988125064",
+      "highway": "footway",
+      "lat": 18.939913,
+      "lng": 72.826777
+    },
+    {
+      "name": null,
+      "osm": "way/988125072",
+      "highway": "footway",
+      "lat": 18.946475,
+      "lng": 72.823399
+    },
+    {
+      "name": null,
+      "osm": "way/988125075",
+      "highway": "footway",
+      "lat": 18.946342,
+      "lng": 72.82315
+    },
+    {
+      "name": null,
+      "osm": "way/988125076",
+      "highway": "footway",
+      "lat": 18.946415,
+      "lng": 72.823259
+    },
+    {
+      "name": null,
+      "osm": "way/988138276",
+      "highway": "steps",
+      "lat": 18.950412,
+      "lng": 72.820193
+    },
+    {
+      "name": null,
+      "osm": "way/988379142",
+      "highway": "steps",
+      "lat": 18.995962,
+      "lng": 72.8302
+    },
+    {
+      "name": null,
+      "osm": "way/988379143",
+      "highway": "steps",
+      "lat": 18.995896,
+      "lng": 72.830379
+    },
+    {
+      "name": null,
+      "osm": "way/988405115",
+      "highway": "steps",
+      "lat": 18.996685,
+      "lng": 72.830334
+    },
+    {
+      "name": null,
+      "osm": "way/988405117",
+      "highway": "steps",
+      "lat": 18.996521,
+      "lng": 72.830648
+    },
+    {
+      "name": null,
+      "osm": "way/988405118",
+      "highway": "footway",
+      "lat": 18.996619,
+      "lng": 72.830687
+    },
+    {
+      "name": null,
+      "osm": "way/988405120",
+      "highway": "steps",
+      "lat": 18.996486,
+      "lng": 72.829582
+    },
+    {
+      "name": null,
+      "osm": "way/988421622",
+      "highway": "steps",
+      "lat": 18.98197,
+      "lng": 72.824441
+    },
+    {
+      "name": null,
+      "osm": "way/988421624",
+      "highway": "footway",
+      "lat": 18.981305,
+      "lng": 72.823078
+    },
+    {
+      "name": null,
+      "osm": "way/988421632",
+      "highway": "steps",
+      "lat": 18.981844,
+      "lng": 72.823775
+    },
+    {
+      "name": null,
+      "osm": "way/988421633",
+      "highway": "steps",
+      "lat": 18.981982,
+      "lng": 72.823877
+    },
+    {
+      "name": null,
+      "osm": "way/988421634",
+      "highway": "footway",
+      "lat": 18.981985,
+      "lng": 72.823701
+    },
+    {
+      "name": null,
+      "osm": "way/988428638",
+      "highway": "steps",
+      "lat": 18.970718,
+      "lng": 72.820163
+    },
+    {
+      "name": null,
+      "osm": "way/988728525",
+      "highway": "steps",
+      "lat": 19.006645,
+      "lng": 72.835388
+    },
+    {
+      "name": null,
+      "osm": "way/988728526",
+      "highway": "steps",
+      "lat": 19.006613,
+      "lng": 72.835121
+    },
+    {
+      "name": null,
+      "osm": "way/988728527",
+      "highway": "footway",
+      "lat": 19.006638,
+      "lng": 72.835266
+    },
+    {
+      "name": null,
+      "osm": "way/988752504",
+      "highway": "steps",
+      "lat": 19.007527,
+      "lng": 72.835904
+    },
+    {
+      "name": null,
+      "osm": "way/988752505",
+      "highway": "footway",
+      "lat": 19.007589,
+      "lng": 72.835944
+    },
+    {
+      "name": null,
+      "osm": "way/988752506",
+      "highway": "footway",
+      "lat": 19.00745,
+      "lng": 72.836184
+    },
+    {
+      "name": null,
+      "osm": "way/988955549",
+      "highway": "steps",
+      "lat": 19.008043,
+      "lng": 72.837113
+    },
+    {
+      "name": null,
+      "osm": "way/988958373",
+      "highway": "steps",
+      "lat": 18.993472,
+      "lng": 72.832732
+    },
+    {
+      "name": null,
+      "osm": "way/988958374",
+      "highway": "steps",
+      "lat": 18.993581,
+      "lng": 72.83287
+    },
+    {
+      "name": null,
+      "osm": "way/988958375",
+      "highway": "footway",
+      "lat": 18.993415,
+      "lng": 72.832868
+    },
+    {
+      "name": null,
+      "osm": "way/988958378",
+      "highway": "steps",
+      "lat": 18.99335,
+      "lng": 72.832865
+    },
+    {
+      "name": null,
+      "osm": "way/988958379",
+      "highway": "footway",
+      "lat": 18.993451,
+      "lng": 72.83283
+    },
+    {
+      "name": null,
+      "osm": "way/988958382",
+      "highway": "steps",
+      "lat": 18.992892,
+      "lng": 72.832843
+    },
+    {
+      "name": null,
+      "osm": "way/988958383",
+      "highway": "footway",
+      "lat": 18.992818,
+      "lng": 72.833205
+    },
+    {
+      "name": null,
+      "osm": "way/988958390",
+      "highway": "steps",
+      "lat": 18.992632,
+      "lng": 72.832836
+    },
+    {
+      "name": null,
+      "osm": "way/988958391",
+      "highway": "footway",
+      "lat": 18.992791,
+      "lng": 72.832952
+    },
+    {
+      "name": null,
+      "osm": "way/988958392",
+      "highway": "footway",
+      "lat": 18.994805,
+      "lng": 72.832864
+    },
+    {
+      "name": null,
+      "osm": "way/1289154810",
+      "highway": "footway",
+      "lat": 18.978071,
+      "lng": 72.844084
+    },
+    {
+      "name": null,
+      "osm": "way/1314987848",
+      "highway": "steps",
+      "lat": 18.94217,
+      "lng": 72.834638
+    },
+    {
+      "name": null,
+      "osm": "way/1314987849",
+      "highway": "footway",
+      "lat": 18.94224,
+      "lng": 72.8349
+    },
+    {
+      "name": null,
+      "osm": "way/1314987850",
+      "highway": "footway",
+      "lat": 18.988252,
+      "lng": 72.832785
+    },
+    {
+      "name": null,
+      "osm": "way/1468630314",
+      "highway": "footway",
+      "lat": 18.942995,
+      "lng": 72.837183
+    },
+    {
+      "name": null,
+      "osm": "way/1468630316",
+      "highway": "footway",
+      "lat": 18.942974,
+      "lng": 72.837394
+    },
+    {
+      "name": null,
+      "osm": "way/1468630317",
+      "highway": "footway",
+      "lat": 18.942973,
+      "lng": 72.837407
+    },
+    {
+      "name": null,
+      "osm": "way/1468630320",
+      "highway": "footway",
+      "lat": 18.942921,
+      "lng": 72.836195
+    },
+    {
+      "name": null,
+      "osm": "way/1468630321",
+      "highway": "footway",
+      "lat": 18.94287,
+      "lng": 72.835748
+    },
+    {
+      "name": null,
+      "osm": "way/1468630322",
+      "highway": "footway",
+      "lat": 18.943038,
+      "lng": 72.836478
+    },
+    {
+      "name": null,
+      "osm": "way/1468630323",
+      "highway": "footway",
+      "lat": 18.942963,
+      "lng": 72.837179
+    },
+    {
+      "name": null,
+      "osm": "way/1468630325",
+      "highway": "footway",
+      "lat": 18.942945,
+      "lng": 72.837396
+    },
+    {
+      "name": null,
+      "osm": "way/1468630326",
+      "highway": "footway",
+      "lat": 18.942859,
+      "lng": 72.835436
+    },
+    {
+      "name": null,
+      "osm": "way/1468630329",
+      "highway": "footway",
+      "lat": 18.943021,
+      "lng": 72.836652
+    },
+    {
+      "name": null,
+      "osm": "way/1468630333",
+      "highway": "footway",
+      "lat": 18.943004,
+      "lng": 72.836825
+    },
+    {
+      "name": null,
+      "osm": "way/1468630334",
+      "highway": "footway",
+      "lat": 18.942827,
+      "lng": 72.83544
+    },
+    {
+      "name": null,
+      "osm": "way/1489093556",
+      "highway": "footway",
+      "lat": 18.945898,
+      "lng": 72.823973
+    },
+    {
+      "name": null,
+      "osm": "way/1489093558",
+      "highway": "footway",
+      "lat": 18.946516,
+      "lng": 72.823538
+    },
+    {
+      "name": null,
+      "osm": "way/1500270880",
+      "highway": "steps",
+      "lat": 19.006527,
+      "lng": 72.835314
+    },
+    {
+      "name": null,
+      "osm": "way/1500270881",
+      "highway": "footway",
+      "lat": 19.006311,
+      "lng": 72.835567
+    },
+    {
+      "name": null,
+      "osm": "way/1500270882",
+      "highway": "steps",
+      "lat": 19.006269,
+      "lng": 72.835928
+    }
+  ],
+  "chosen": {
+    "lat": 19.001576,
+    "lng": 72.833087,
+    "basis": "midpoint between the two resolved stations"
+  },
+  "_README": "Resolved from OpenStreetMap by scripts/resolve-incident.py. A HUMAN MUST CONFIRM 'chosen' before it is treated as the incident location (CLAUDE.md section 6.3). Nothing here was typed from memory."
+}

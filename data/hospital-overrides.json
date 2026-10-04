@@ -1,0 +1,21 @@
+{
+  "_README": [
+    "Human-verified hospital facts, keyed by OSM id (as a string).",
+    "Review docs/HOSPITAL_REVIEW.md, check each entry against BMC or the",
+    "hospital's own site, and record ONLY what you can verify here.",
+    "Anything absent stays labelled 'simulated' in the interface.",
+    "OpenStreetMap does not record trauma capability or live bed counts.",
+    "Delete this _README key once real entries exist.",
+    "",
+    "Shape of an entry:",
+    "  \"123456789\": {",
+    "    \"include\": true,",
+    "    \"traumaCapable\": true,",
+    "    \"icu\": true,",
+    "    \"beds\": { \"total\": 0, \"icu\": 0 },",
+    "    \"sourceUrl\": \"\",",
+    "    \"verifiedOn\": \"\",",
+    "    \"notes\": \"\"",
+    "  }"
+  ]
+}

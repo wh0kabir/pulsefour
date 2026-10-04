@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PulseLine from '../components/PulseLine.astro';
+import Console from '../ui/console/Console';
+---
+
+<!-- quietBackground: the aurora stays off the console so the map stays crisp (section 14). -->
+<Layout title="Console — Pulse" quietBackground>
+  <header
+    class="flex items-center gap-4 border-b border-hairline px-6 py-3"
+  >
+    <a class="flex items-center gap-3" href="/">
+      <PulseLine class="h-6 w-20" />
+      <span class="font-display text-base font-semibold">Pulse</span>
+    </a>
+    <span class="text-sm text-mist">Parel crowd crush</span>
+    <span class="ml-auto text-xs text-mist">
+      Simulation on real OpenStreetMap streets
+    </span>
+  </header>
+
+  <main>
+    <!-- The single React island (locked decision 12). -->
+    <Console client:load />
+  </main>
+</Layout>

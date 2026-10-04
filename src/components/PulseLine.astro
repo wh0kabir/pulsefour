@@ -1,0 +1,26 @@
+---
+/**
+ * The heartbeat line (CLAUDE.md section 14). Draws once, then beats.
+ * The exact path and gradient are specified in the design system.
+ *
+ * The gradient id is fixed at `ice-stroke` because the section 14 CSS
+ * references it directly (`stroke: url(#ice-stroke)`), and a CSS stroke beats
+ * an inline attribute. Several instances on one page all resolve to the first
+ * gradient, which is identical, so they render the same.
+ */
+interface Props {
+  class?: string;
+}
+
+const { class: className = 'h-12 w-60' } = Astro.props;
+---
+
+<svg class={`pulse-line ${className}`} viewBox="0 0 240 48" aria-hidden="true">
+  <defs>
+    <linearGradient id="ice-stroke">
+      <stop offset="0" stop-color="#E6F6FF" />
+      <stop offset="1" stop-color="#2B7BFF" />
+    </linearGradient>
+  </defs>
+  <path pathLength="1" d="M0 24 H70 L82 24 L92 6 L104 42 L116 14 L124 24 H240" />
+</svg>

@@ -22,3 +22,15 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Python data-extraction tooling (build time only, never a runtime dependency)
+.venv/
+__pycache__/
+*.pyc
+
+# Raw OSM extracts are regenerable; see docs/DATA.md.
+# The built public/data/*.json files ARE committed and must stay committed.
+data/raw/
+
+# OSMnx HTTP cache (Overpass responses). Regenerable; do not commit.
+cache/

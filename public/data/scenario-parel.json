@@ -1,0 +1,72 @@
+{
+  "id": "parel-crowd-crush",
+  "name": "Parel crowd crush",
+  "seed": 20171029,
+  "durationMin": 60,
+  "incident": {
+    "name": "Footbridge between Prabhadevi and Parel stations",
+    "lat": 19.008477,
+    "lng": 72.836779,
+    "resolvedFrom": "Midpoint of Prabhadevi station (node/3462327239) and Parel station (node/3501418212), both resolved from OpenStreetMap by scripts/resolve-incident.py.",
+    "confirmedByHuman": false,
+    "note": "Parel station itself lies about 140 m NORTH of the study area's bounding box. The incident anchors to the nearest road node inside the area. A human must confirm this point (CLAUDE.md section 6.3)."
+  },
+  "casualtySchedule": [
+    {
+      "atMin": 0,
+      "count": 16,
+      "severityMix": { "red": 4, "yellow": 6, "green": 5, "black": 1 },
+      "spreadM": 120
+    },
+    {
+      "atMin": 6,
+      "count": 12,
+      "severityMix": { "red": 2, "yellow": 5, "green": 4, "black": 1 },
+      "spreadM": 180
+    },
+    {
+      "atMin": 13,
+      "count": 8,
+      "severityMix": { "red": 1, "yellow": 3, "green": 4, "black": 0 },
+      "spreadM": 240
+    }
+  ],
+  "fleet": { "als": 5, "bls": 9, "startPositions": "hospitals" },
+  "scriptedEvents": [
+    {
+      "atMin": 12,
+      "caption": "A main approach road closes. Watch the plan re-form.",
+      "event": {
+        "type": "closeRoad",
+        "osmid": "216492413",
+        "wholeRoad": true
+      }
+    },
+    {
+      "atMin": 20,
+      "caption": "The nearest large hospital runs out of beds.",
+      "event": {
+        "type": "fillHospital",
+        "hospitalId": "H113561019",
+        "availableBeds": 0
+      }
+    },
+    {
+      "atMin": 28,
+      "caption": "A second surge of casualties.",
+      "event": {
+        "type": "surge",
+        "center": { "lat": 19.008477, "lng": 72.836779 },
+        "count": 6,
+        "spreadM": 300,
+        "severityMix": { "red": 2, "yellow": 2, "green": 2 }
+      }
+    }
+  ],
+  "_provenance": {
+    "incidentLocation": "OpenStreetMap (station nodes), midpoint computed",
+    "closedRoad": "OSM way 216492413, Dr Babasaheb Ambedkar Marg (Vincent Road), a trunk road and the main approach from the south",
+    "filledHospital": "Mahatma Gandhi Memorial Hospital, the nearest large trauma-capable hospital, 1.4 km from the incident",
+    "everythingElse": "SIMULATED. Casualty counts, severity mix, timings and fleet size are modelling assumptions from CLAUDE.md section 7.4, not facts about any real incident."
+  }
+}

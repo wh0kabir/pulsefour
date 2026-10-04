@@ -1,0 +1,231 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {
+  ALS_PREFERENCE_PENALTY_MIN,
+  CASUALTY_MIX,
+  CONGESTION,
+  DETERIORATION_LIMIT_MIN,
+  FLEET,
+  ICU_SHARE_OF_BEDS,
+  LOAD_PENALTY,
+  REASSIGNMENT_MARGIN,
+  RESPONSE_TARGET_MIN,
+  SEVERITY_WEIGHT,
+  SPEED_KMH,
+  START_OCCUPANCY,
+  SUPPLY_USE,
+  TREATMENT_TIME_MIN,
+  WAITING,
+} from '../config/assumptions';
+
+/**
+ * The assumptions register is generated from src/config/assumptions.ts, so the
+ * page can never drift from the numbers the simulation actually uses.
+ */
+const assumptions: { parameter: string; value: string; notes: string }[] = [
+  {
+    parameter: 'Effective ambulance speed by road class under congestion (km/h)',
+    value: Object.entries(SPEED_KMH)
+      .map(([k, v]) => `${k} ${v}`)
+      .join(', '),
+    notes: 'Conservative; Mumbai traffic is not free-flowing.',
+  },
+  {
+    parameter: 'Scenario congestion multiplier',
+    value: `${CONGESTION.default} default, ${CONGESTION.rain} for a rain scenario`,
+    notes: 'Applies to all speeds.',
+  },
+  {
+    parameter: 'Severity weights (priority)',
+    value: Object.entries(SEVERITY_WEIGHT)
+      .map(([k, v]) => `${k} ${v}`)
+      .join(', '),
+    notes: 'Black is never allocated.',
+  },
+  {
+    parameter: 'Deterioration limit before an adverse outcome (min)',
+    value: Object.entries(DETERIORATION_LIMIT_MIN)
+      .map(([k, v]) => `${k} ${v}`)
+      .join(', '),
+    notes:
+      'Not a medical claim. Research found no sound hard golden-hour threshold. We say "waited past limit", never "died".',
+  },
+  {
+    parameter: 'Treatment time occupying a bed (min)',
+    value: Object.entries(TREATMENT_TIME_MIN)
+      .map(([k, v]) => `${k} ${v}`)
+      .join(', '),
+    notes: '',
+  },
+  {
+    parameter: 'Supplies consumed on handover',
+    value: Object.entries(SUPPLY_USE)
+      .map(([k, v]) => `${k}: ${v.bloodUnits} blood, ${v.oxygenUnits} oxygen`)
+      .join('; '),
+    notes: '',
+  },
+  {
+    parameter: 'Hospital load penalty',
+    value: `0 minutes up to ${LOAD_PENALTY.freeUpToFraction * 100}% full, rising quadratically to ${LOAD_PENALTY.maxPenaltyMin} minutes at 100%`,
+    notes: 'A cost that steers patients away from nearly-full hospitals.',
+  },
+  {
+    parameter: 'Waiting factor',
+    value: `1 + waitedMin / ${WAITING.divisorMin}, capped at ${WAITING.cap}`,
+    notes: 'Stops low-severity patients being ignored forever.',
+  },
+  {
+    parameter: 'ALS preference',
+    value: `${ALS_PREFERENCE_PENALTY_MIN}-minute equivalent penalty`,
+    notes: 'A BLS ambulance carrying a red patient. Soft, not a hard rule.',
+  },
+  {
+    parameter: 'Reassignment margin',
+    value: `${REASSIGNMENT_MARGIN * 100} percent`,
+    notes: 'An ambulance en route is only reassigned if the new plan beats this.',
+  },
+  {
+    parameter: 'Fleet',
+    value: `${FLEET.als + FLEET.bls} (${FLEET.als} ALS, ${FLEET.bls} BLS)`,
+    notes: 'Deliberately smaller than the casualty load. Scarcity is the point.',
+  },
+  {
+    parameter: 'Casualty mix',
+    value: Object.entries(CASUALTY_MIX)
+      .map(([k, v]) => `${v} ${k}`)
+      .join(', '),
+    notes: '',
+  },
+  {
+    parameter: 'Start-of-run hospital occupancy',
+    value: `${START_OCCUPANCY.min * 100} to ${START_OCCUPANCY.max * 100} percent, seeded`,
+    notes: '',
+  },
+  {
+    parameter: 'ICU beds as a share of total, when unverified',
+    value: `${Math.round(ICU_SHARE_OF_BEDS * 100)} percent`,
+    notes: 'Placeholder, labelled simulated.',
+  },
+  {
+    parameter: 'Response target line (min)',
+    value: String(RESPONSE_TARGET_MIN),
+    notes:
+      'The 108 service’s stated urban average per team research. Unverified: not yet confirmed against a primary source.',
+  },
+];
+---
+
+<Layout title="About — Pulse">
+  <main class="mx-auto max-w-3xl px-6 py-16">
+    <h1 class="font-display text-3xl font-semibold tracking-tight">About Pulse</h1>
+
+    <section class="mt-10 space-y-4 text-sm leading-relaxed text-mist">
+      <h2 class="font-display text-xl font-medium text-frost">How the allocator works</h2>
+      <p>
+        Every simulated minute, Pulse reconsiders the whole picture from scratch. For each
+        ambulance and each casualty it finds the best hospital that can actually take that
+        patient, then scores the pairing on travel time to the scene, travel time onward to
+        hospital, how full that hospital is, and how long the casualty has already waited.
+        Severity enters as a benefit subtracted from the cost, which is what lets a distant
+        critical patient outrank a nearby minor one.
+      </p>
+      <p>
+        It then solves the whole board at once using the Hungarian method, rather than
+        greedily handing out the closest ambulance first. Assignments that would send a
+        critical patient to a hospital without trauma capability, or down a closed road, are
+        ruled out before scoring. A casualty who cannot be served is never dropped silently:
+        it is raised to a human as an escalation.
+      </p>
+    </section>
+
+    <section class="mt-12 space-y-4 text-sm leading-relaxed text-mist">
+      <h2 class="font-display text-xl font-medium text-frost">The record</h2>
+      <p>
+        Every decision is appended to a log where each entry carries the hash of the one
+        before it, so editing an old entry breaks every entry after it.
+      </p>
+      <p>
+        This gives the tamper-evidence property of a blockchain without the cost and latency.
+        It does not prove the original data was truthful. A blockchain is mainly useful when
+        independent parties need a shared ledger; if one trusted organisation controls the
+        log, a hash chain does the job with less complexity. The natural production step is
+        anchoring checkpoints to an external ledger or trusted timestamp service.
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="font-display text-xl font-medium">Assumptions register</h2>
+      <p class="mt-3 max-w-[68ch] text-sm leading-relaxed text-mist">
+        Every row below is an invented simulation parameter, not a fact. This table is
+        generated from the configuration the simulation actually reads, so it cannot drift
+        from the running model.
+      </p>
+
+      <div class="mt-6 overflow-x-auto rounded-xl border border-hairline">
+        <table class="w-full border-collapse text-left text-sm">
+          <thead>
+            <tr class="border-b border-hairline bg-slate text-xs text-ice-300">
+              <th class="px-4 py-3 font-medium">Parameter</th>
+              <th class="px-4 py-3 font-medium">Starting value</th>
+              <th class="px-4 py-3 font-medium">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              assumptions.map((row) => (
+                <tr class="border-b border-hairline/60 last:border-0 align-top">
+                  <td class="px-4 py-3 text-frost">{row.parameter}</td>
+                  <td class="tabular px-4 py-3 text-mist">{row.value}</td>
+                  <td class="px-4 py-3 text-mist">{row.notes}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mt-12 space-y-4 text-sm leading-relaxed text-mist">
+      <h2 class="font-display text-xl font-medium text-frost">Limits</h2>
+      <ul class="list-disc space-y-2 pl-5">
+        <li>
+          Hospital capacity is read through a <code class="font-mono text-xs">HospitalFeed</code>
+          interface. The prototype implements a simulated feed. Pulse is designed to consume a
+          capacity feed; it is not connected to one.
+        </li>
+        <li>
+          OpenStreetMap does not record which hospitals can handle trauma. That flag comes
+          from human-verified overrides, or is labelled simulated.
+        </li>
+        <li>
+          The deterioration limits are modelling parameters, not clinical thresholds. Pulse
+          reports that a casualty waited past their limit, and makes no claim about outcome.
+        </li>
+        <li>This is screening and dispatch decision support, not a diagnostic tool.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12 space-y-3 text-sm leading-relaxed text-mist">
+      <h2 class="font-display text-xl font-medium text-frost">Data sources</h2>
+      <ul class="list-disc space-y-2 pl-5">
+        <li>
+          Road network and hospital locations: &copy; OpenStreetMap contributors, under the
+          <a
+            class="text-ice-500 underline decoration-hairline underline-offset-2 hover:decoration-ice-500"
+            href="https://www.openstreetmap.org/copyright"
+            rel="noreferrer noopener"
+            target="_blank">Open Database Licence</a
+          >.
+        </li>
+        <li>
+          Triage scheme: START (Simple Triage and Rapid Treatment) colours, used so that
+          responders recognise the scale.
+        </li>
+        <li>
+          Incident background and the response-time target come from team research notes and
+          are treated as unverified until confirmed against a primary source.
+        </li>
+      </ul>
+    </section>
+  </main>
+</Layout>

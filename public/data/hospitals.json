@@ -1,0 +1,283 @@
+{
+ "meta": {
+  "generated": "2026-10-03T21:12:45.602Z",
+  "source": "OpenStreetMap via Overpass",
+  "attribution": "Map data © OpenStreetMap contributors, ODbL",
+  "hospitalCount": 10,
+  "traumaCapableCount": 6,
+  "note": "Locations are real (OpenStreetMap). Bed counts, ICU counts, trauma capability and supplies are SIMULATED unless a field is marked verified. OpenStreetMap does not record trauma capability.",
+  "curationRule": "Included when named, not a duplicate, not single-speciality, and footprint >= 3000 m². Trauma-capable in the simulation when footprint >= 15000 m²."
+ },
+ "hospitals": [
+  {
+   "id": "H46715024",
+   "name": "Bombay Hospital",
+   "position": {
+    "lat": 18.94083,
+    "lng": 72.82803
+   },
+   "nodeId": 960,
+   "traumaCapable": false,
+   "hasIcu": true,
+   "beds": {
+    "total": 250,
+    "available": 250,
+    "icuTotal": 20,
+    "icuAvailable": 20
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H207376648",
+   "name": "Cama Hospital",
+   "position": {
+    "lat": 18.94225,
+    "lng": 72.8321
+   },
+   "nodeId": 2477,
+   "traumaCapable": false,
+   "hasIcu": true,
+   "beds": {
+    "total": 250,
+    "available": 250,
+    "icuTotal": 20,
+    "icuAvailable": 20
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H430223744",
+   "name": "Dr. Babasaheb Ambedkar Memorial Central Railway Hospital",
+   "position": {
+    "lat": 18.98017,
+    "lng": 72.83353
+   },
+   "nodeId": 1338,
+   "traumaCapable": true,
+   "hasIcu": true,
+   "beds": {
+    "total": 400,
+    "available": 400,
+    "icuTotal": 32,
+    "icuAvailable": 32
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H803325198",
+   "name": "J. J. Hospital",
+   "position": {
+    "lat": 18.96383,
+    "lng": 72.83446
+   },
+   "nodeId": 1471,
+   "traumaCapable": true,
+   "hasIcu": true,
+   "beds": {
+    "total": 2844,
+    "available": 2844,
+    "icuTotal": 228,
+    "icuAvailable": 228
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H1121494180",
+   "name": "Jagjivan Ram Hospital",
+   "position": {
+    "lat": 18.97043,
+    "lng": 72.82406
+   },
+   "nodeId": 673,
+   "traumaCapable": false,
+   "hasIcu": true,
+   "beds": {
+    "total": 250,
+    "available": 250,
+    "icuTotal": 20,
+    "icuAvailable": 20
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H113561019",
+   "name": "Mahatma Gandhi Memorial Hospital",
+   "position": {
+    "lat": 18.99711,
+    "lng": 72.84207
+   },
+   "nodeId": 1672,
+   "traumaCapable": true,
+   "hasIcu": true,
+   "beds": {
+    "total": 600,
+    "available": 600,
+    "icuTotal": 48,
+    "icuAvailable": 48
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H1289053364",
+   "name": "Masina Hospital",
+   "position": {
+    "lat": 18.9747,
+    "lng": 72.83594
+   },
+   "nodeId": 1501,
+   "traumaCapable": true,
+   "hasIcu": true,
+   "beds": {
+    "total": 400,
+    "available": 400,
+    "icuTotal": 32,
+    "icuAvailable": 32
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H107441511",
+   "name": "St George Hospital",
+   "position": {
+    "lat": 18.94175,
+    "lng": 72.83796
+   },
+   "nodeId": 1356,
+   "traumaCapable": true,
+   "hasIcu": true,
+   "beds": {
+    "total": 600,
+    "available": 600,
+    "icuTotal": 48,
+    "icuAvailable": 48
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H1289063015",
+   "name": "Wockhardt Hospitals, South Mumbai",
+   "position": {
+    "lat": 18.97521,
+    "lng": 72.82397
+   },
+   "nodeId": 717,
+   "traumaCapable": false,
+   "hasIcu": true,
+   "beds": {
+    "total": 120,
+    "available": 120,
+    "icuTotal": 10,
+    "icuAvailable": 10
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H207376654",
+   "name": "गोकुळदास तेजपाल रुग्णालय",
+   "position": {
+    "lat": 18.94477,
+    "lng": 72.8318
+   },
+   "nodeId": 1019,
+   "traumaCapable": true,
+   "hasIcu": true,
+   "beds": {
+    "total": 400,
+    "available": 400,
+    "icuTotal": 32,
+    "icuAvailable": 32
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  }
+ ]
+}

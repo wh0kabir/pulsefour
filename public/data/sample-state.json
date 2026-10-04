@@ -1,0 +1,2577 @@
+{
+ "tick": 14,
+ "simMin": 14,
+ "running": false,
+ "speed": 1,
+ "strategy": "pulse",
+ "autoAccept": true,
+ "congestion": 1,
+ "casualties": [
+  {
+   "id": "C001",
+   "severity": "green",
+   "position": {
+    "lat": 19.00789,
+    "lng": 72.83579
+   },
+   "nodeId": 1869,
+   "appearedAtMin": 1,
+   "waitedMin": 13,
+   "limitMin": 240,
+   "status": "waiting"
+  },
+  {
+   "id": "C002",
+   "severity": "yellow",
+   "position": {
+    "lat": 19.00789,
+    "lng": 72.83579
+   },
+   "nodeId": 1869,
+   "appearedAtMin": 1,
+   "waitedMin": 13,
+   "limitMin": 90,
+   "status": "assigned",
+   "ambulanceId": "B12",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "C003",
+   "severity": "red",
+   "position": {
+    "lat": 19.00741,
+    "lng": 72.83784
+   },
+   "nodeId": 2631,
+   "appearedAtMin": 1,
+   "waitedMin": 12,
+   "limitMin": 45,
+   "status": "transporting",
+   "ambulanceId": "B07",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "C004",
+   "severity": "red",
+   "position": {
+    "lat": 19.00726,
+    "lng": 72.83679
+   },
+   "nodeId": 1781,
+   "appearedAtMin": 1,
+   "waitedMin": 13,
+   "limitMin": 45,
+   "status": "waiting"
+  },
+  {
+   "id": "C005",
+   "severity": "green",
+   "position": {
+    "lat": 19.00741,
+    "lng": 72.83784
+   },
+   "nodeId": 2631,
+   "appearedAtMin": 1,
+   "waitedMin": 13,
+   "limitMin": 240,
+   "status": "waiting"
+  },
+  {
+   "id": "C006",
+   "severity": "yellow",
+   "position": {
+    "lat": 19.00741,
+    "lng": 72.83784
+   },
+   "nodeId": 2631,
+   "appearedAtMin": 1,
+   "waitedMin": 13,
+   "limitMin": 90,
+   "status": "waiting"
+  },
+  {
+   "id": "C007",
+   "severity": "yellow",
+   "position": {
+    "lat": 19.00741,
+    "lng": 72.83784
+   },
+   "nodeId": 2631,
+   "appearedAtMin": 1,
+   "waitedMin": 4,
+   "limitMin": 90,
+   "status": "admitted",
+   "ambulanceId": "B07",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "C008",
+   "severity": "green",
+   "position": {
+    "lat": 19.00741,
+    "lng": 72.83784
+   },
+   "nodeId": 2631,
+   "appearedAtMin": 1,
+   "waitedMin": 13,
+   "limitMin": 240,
+   "status": "waiting"
+  },
+  {
+   "id": "C009",
+   "severity": "green",
+   "position": {
+    "lat": 19.00741,
+    "lng": 72.83784
+   },
+   "nodeId": 2631,
+   "appearedAtMin": 1,
+   "waitedMin": 13,
+   "limitMin": 240,
+   "status": "waiting"
+  },
+  {
+   "id": "C010",
+   "severity": "yellow",
+   "position": {
+    "lat": 19.00789,
+    "lng": 72.83579
+   },
+   "nodeId": 1869,
+   "appearedAtMin": 1,
+   "waitedMin": 13,
+   "limitMin": 90,
+   "status": "assigned",
+   "ambulanceId": "B09",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "C011",
+   "severity": "green",
+   "position": {
+    "lat": 19.00741,
+    "lng": 72.83784
+   },
+   "nodeId": 2631,
+   "appearedAtMin": 1,
+   "waitedMin": 13,
+   "limitMin": 240,
+   "status": "waiting"
+  },
+  {
+   "id": "C012",
+   "severity": "red",
+   "position": {
+    "lat": 19.00789,
+    "lng": 72.83579
+   },
+   "nodeId": 1869,
+   "appearedAtMin": 1,
+   "waitedMin": 8,
+   "limitMin": 45,
+   "status": "transporting"
+  },
+  {
+   "id": "C013",
+   "severity": "red",
+   "position": {
+    "lat": 19.00741,
+    "lng": 72.83784
+   },
+   "nodeId": 2631,
+   "appearedAtMin": 1,
+   "waitedMin": 13,
+   "limitMin": 45,
+   "status": "assigned",
+   "ambulanceId": "A01",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "C014",
+   "severity": "yellow",
+   "position": {
+    "lat": 19.00789,
+    "lng": 72.83579
+   },
+   "nodeId": 1869,
+   "appearedAtMin": 1,
+   "waitedMin": 8,
+   "limitMin": 90,
+   "status": "transporting",
+   "ambulanceId": "B13",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "C015",
+   "severity": "yellow",
+   "position": {
+    "lat": 19.00789,
+    "lng": 72.83579
+   },
+   "nodeId": 1869,
+   "appearedAtMin": 1,
+   "waitedMin": 13,
+   "limitMin": 90,
+   "status": "waiting"
+  },
+  {
+   "id": "C016",
+   "severity": "black",
+   "position": {
+    "lat": 19.00789,
+    "lng": 72.83579
+   },
+   "nodeId": 1869,
+   "appearedAtMin": 1,
+   "waitedMin": 0,
+   "limitMin": null,
+   "status": "unserved"
+  },
+  {
+   "id": "C017",
+   "severity": "red",
+   "position": {
+    "lat": 19.00726,
+    "lng": 72.83679
+   },
+   "nodeId": 1781,
+   "appearedAtMin": 7,
+   "waitedMin": 6,
+   "limitMin": 45,
+   "status": "transporting",
+   "ambulanceId": "B06",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "C018",
+   "severity": "red",
+   "position": {
+    "lat": 19.00741,
+    "lng": 72.83784
+   },
+   "nodeId": 2631,
+   "appearedAtMin": 7,
+   "waitedMin": 3,
+   "limitMin": 45,
+   "status": "transporting",
+   "ambulanceId": "A04",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "C019",
+   "severity": "yellow",
+   "position": {
+    "lat": 19.00789,
+    "lng": 72.83579
+   },
+   "nodeId": 1869,
+   "appearedAtMin": 7,
+   "waitedMin": 7,
+   "limitMin": 90,
+   "status": "waiting"
+  },
+  {
+   "id": "C020",
+   "severity": "yellow",
+   "position": {
+    "lat": 19.00741,
+    "lng": 72.83784
+   },
+   "nodeId": 2631,
+   "appearedAtMin": 7,
+   "waitedMin": 7,
+   "limitMin": 90,
+   "status": "waiting"
+  },
+  {
+   "id": "C021",
+   "severity": "yellow",
+   "position": {
+    "lat": 19.00789,
+    "lng": 72.83579
+   },
+   "nodeId": 1869,
+   "appearedAtMin": 7,
+   "waitedMin": 7,
+   "limitMin": 90,
+   "status": "waiting"
+  },
+  {
+   "id": "C022",
+   "severity": "green",
+   "position": {
+    "lat": 19.00741,
+    "lng": 72.83784
+   },
+   "nodeId": 2631,
+   "appearedAtMin": 7,
+   "waitedMin": 7,
+   "limitMin": 240,
+   "status": "waiting"
+  },
+  {
+   "id": "C023",
+   "severity": "green",
+   "position": {
+    "lat": 19.00741,
+    "lng": 72.83784
+   },
+   "nodeId": 2631,
+   "appearedAtMin": 7,
+   "waitedMin": 7,
+   "limitMin": 240,
+   "status": "waiting"
+  },
+  {
+   "id": "C024",
+   "severity": "yellow",
+   "position": {
+    "lat": 19.00789,
+    "lng": 72.83579
+   },
+   "nodeId": 1869,
+   "appearedAtMin": 7,
+   "waitedMin": 7,
+   "limitMin": 90,
+   "status": "waiting"
+  },
+  {
+   "id": "C025",
+   "severity": "green",
+   "position": {
+    "lat": 19.00789,
+    "lng": 72.83579
+   },
+   "nodeId": 1869,
+   "appearedAtMin": 7,
+   "waitedMin": 7,
+   "limitMin": 240,
+   "status": "waiting"
+  },
+  {
+   "id": "C026",
+   "severity": "black",
+   "position": {
+    "lat": 19.00789,
+    "lng": 72.83579
+   },
+   "nodeId": 1869,
+   "appearedAtMin": 7,
+   "waitedMin": 0,
+   "limitMin": null,
+   "status": "unserved"
+  },
+  {
+   "id": "C027",
+   "severity": "yellow",
+   "position": {
+    "lat": 19.00705,
+    "lng": 72.83666
+   },
+   "nodeId": 1782,
+   "appearedAtMin": 7,
+   "waitedMin": 7,
+   "limitMin": 90,
+   "status": "waiting"
+  },
+  {
+   "id": "C028",
+   "severity": "green",
+   "position": {
+    "lat": 19.00741,
+    "lng": 72.83784
+   },
+   "nodeId": 2631,
+   "appearedAtMin": 7,
+   "waitedMin": 7,
+   "limitMin": 240,
+   "status": "waiting"
+  },
+  {
+   "id": "C029",
+   "severity": "green",
+   "position": {
+    "lat": 19.00808,
+    "lng": 72.83513
+   },
+   "nodeId": 2048,
+   "appearedAtMin": 14,
+   "waitedMin": 0,
+   "limitMin": 240,
+   "status": "waiting"
+  },
+  {
+   "id": "C030",
+   "severity": "green",
+   "position": {
+    "lat": 19.00726,
+    "lng": 72.83679
+   },
+   "nodeId": 1781,
+   "appearedAtMin": 14,
+   "waitedMin": 0,
+   "limitMin": 240,
+   "status": "waiting"
+  },
+  {
+   "id": "C031",
+   "severity": "yellow",
+   "position": {
+    "lat": 19.00789,
+    "lng": 72.83579
+   },
+   "nodeId": 1869,
+   "appearedAtMin": 14,
+   "waitedMin": 0,
+   "limitMin": 90,
+   "status": "waiting"
+  },
+  {
+   "id": "C032",
+   "severity": "red",
+   "position": {
+    "lat": 19.00729,
+    "lng": 72.83812
+   },
+   "nodeId": 2634,
+   "appearedAtMin": 14,
+   "waitedMin": 0,
+   "limitMin": 45,
+   "status": "waiting"
+  },
+  {
+   "id": "C033",
+   "severity": "yellow",
+   "position": {
+    "lat": 19.00726,
+    "lng": 72.83679
+   },
+   "nodeId": 1781,
+   "appearedAtMin": 14,
+   "waitedMin": 0,
+   "limitMin": 90,
+   "status": "waiting"
+  },
+  {
+   "id": "C034",
+   "severity": "yellow",
+   "position": {
+    "lat": 19.00718,
+    "lng": 72.83542
+   },
+   "nodeId": 903,
+   "appearedAtMin": 14,
+   "waitedMin": 0,
+   "limitMin": 90,
+   "status": "waiting"
+  },
+  {
+   "id": "C035",
+   "severity": "green",
+   "position": {
+    "lat": 19.00741,
+    "lng": 72.83784
+   },
+   "nodeId": 2631,
+   "appearedAtMin": 14,
+   "waitedMin": 0,
+   "limitMin": 240,
+   "status": "waiting"
+  },
+  {
+   "id": "C036",
+   "severity": "green",
+   "position": {
+    "lat": 19.00665,
+    "lng": 72.83733
+   },
+   "nodeId": 1818,
+   "appearedAtMin": 14,
+   "waitedMin": 0,
+   "limitMin": 240,
+   "status": "waiting"
+  }
+ ],
+ "ambulances": [
+  {
+   "id": "A01",
+   "kind": "ALS",
+   "position": {
+    "lat": 18.99162318096821,
+    "lng": 72.8361946831498
+   },
+   "edgePos": {
+    "edgeId": 3915,
+    "fraction": 0.6233118637024725
+   },
+   "status": "to_patient",
+   "routeEdgeIds": [
+    3915,
+    3920,
+    3195,
+    4378,
+    6681,
+    3215,
+    3922,
+    3867,
+    5532,
+    5752,
+    4963,
+    4487,
+    4181,
+    4437,
+    4359,
+    4358,
+    5806,
+    6064,
+    6061
+   ],
+   "casualtyId": "C013",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "A02",
+   "kind": "ALS",
+   "position": {
+    "lat": 18.98727697361313,
+    "lng": 72.83539227467276
+   },
+   "edgePos": {
+    "edgeId": 3915,
+    "fraction": 0.4170371909412009
+   },
+   "status": "to_patient",
+   "routeEdgeIds": [
+    3915,
+    3920,
+    3195,
+    4378,
+    6681,
+    3215,
+    3922,
+    3867,
+    5532,
+    5752,
+    4963,
+    4487,
+    4181,
+    4437,
+    4359,
+    4358,
+    5806,
+    6064,
+    6061
+   ],
+   "casualtyId": "C003",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "A03",
+   "kind": "ALS",
+   "position": {
+    "lat": 19.004022510258267,
+    "lng": 72.8309635216027
+   },
+   "edgePos": {
+    "edgeId": 5059,
+    "fraction": 0.2095100168959693
+   },
+   "status": "to_hospital",
+   "routeEdgeIds": [
+    5059,
+    5191,
+    5186,
+    3638,
+    4347,
+    4354,
+    4352,
+    3387,
+    5593,
+    3970,
+    6226,
+    2281,
+    2295,
+    3227,
+    3218,
+    6600,
+    5306,
+    2307,
+    5223,
+    2298,
+    4118
+   ],
+   "casualtyId": "C012",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "A04",
+   "kind": "ALS",
+   "position": {
+    "lat": 18.99929435658915,
+    "lng": 72.8418300516796
+   },
+   "edgePos": {
+    "edgeId": 3575,
+    "fraction": 0.4284237726098194
+   },
+   "status": "to_hospital",
+   "routeEdgeIds": [
+    3575,
+    3565,
+    2298,
+    4118
+   ],
+   "casualtyId": "C018",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "A05",
+   "kind": "ALS",
+   "position": {
+    "lat": 19.006323943699314,
+    "lng": 72.83796539176544
+   },
+   "edgePos": {
+    "edgeId": 4181,
+    "fraction": 0.16395820336868294
+   },
+   "status": "to_patient",
+   "routeEdgeIds": [
+    4181,
+    4437,
+    4359,
+    4358,
+    5806,
+    6064,
+    6061
+   ],
+   "casualtyId": "C003",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "B06",
+   "kind": "BLS",
+   "position": {
+    "lat": 19.00726,
+    "lng": 72.83679
+   },
+   "edgePos": {
+    "edgeId": 4963,
+    "fraction": 0.6667423812227903
+   },
+   "status": "to_hospital",
+   "routeEdgeIds": [
+    4358,
+    5805,
+    4355,
+    4179,
+    4423,
+    2398,
+    4194,
+    5750,
+    2378,
+    4202,
+    4200,
+    5292,
+    4205,
+    4212,
+    4254,
+    5718,
+    4250,
+    4257,
+    4005,
+    5918,
+    5916,
+    5919,
+    2323,
+    3575,
+    3565,
+    2298,
+    4118
+   ],
+   "casualtyId": "C017",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "B07",
+   "kind": "BLS",
+   "position": {
+    "lat": 19.007343457446808,
+    "lng": 72.83795090425532
+   },
+   "edgePos": {
+    "edgeId": 6061,
+    "fraction": 0.26063829787233966
+   },
+   "status": "to_patient",
+   "routeEdgeIds": [
+    6061
+   ],
+   "casualtyId": "C003",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "B08",
+   "kind": "BLS",
+   "position": {
+    "lat": 18.99162318096821,
+    "lng": 72.8361946831498
+   },
+   "edgePos": {
+    "edgeId": 3915,
+    "fraction": 0.6233118637024725
+   },
+   "status": "to_patient",
+   "routeEdgeIds": [
+    3915,
+    3920,
+    3195,
+    4378,
+    6681,
+    3215,
+    3922,
+    3867,
+    5532,
+    5752,
+    4963,
+    4487,
+    4181,
+    4437,
+    4359,
+    4358,
+    5806,
+    6064,
+    6061
+   ],
+   "casualtyId": "C018",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "B09",
+   "kind": "BLS",
+   "position": {
+    "lat": 19.007678577235772,
+    "lng": 72.83566475609756
+   },
+   "edgePos": {
+    "edgeId": 2429,
+    "fraction": 0.9065040650406508
+   },
+   "status": "to_patient",
+   "routeEdgeIds": [
+    2429,
+    4550
+   ],
+   "casualtyId": "C010",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "B10",
+   "kind": "BLS",
+   "position": {
+    "lat": 18.99162318096821,
+    "lng": 72.8361946831498
+   },
+   "edgePos": {
+    "edgeId": 3915,
+    "fraction": 0.6233118637024725
+   },
+   "status": "to_patient",
+   "routeEdgeIds": [
+    3915,
+    3920,
+    3195,
+    4378,
+    6681,
+    3215,
+    3922,
+    3867,
+    5532,
+    5752,
+    4963,
+    4487,
+    4181,
+    4437,
+    4359,
+    4358,
+    5806,
+    6064,
+    6061
+   ],
+   "casualtyId": "C006",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "B11",
+   "kind": "BLS",
+   "position": {
+    "lat": 18.99162318096821,
+    "lng": 72.8361946831498
+   },
+   "edgePos": {
+    "edgeId": 3915,
+    "fraction": 0.6233118637024725
+   },
+   "status": "to_patient",
+   "routeEdgeIds": [
+    3915,
+    3920,
+    3195,
+    4378,
+    6681,
+    3215,
+    3922,
+    3867,
+    5532,
+    5752,
+    4963,
+    4487,
+    4181,
+    4437,
+    4359
+   ],
+   "casualtyId": "C004",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "B12",
+   "kind": "BLS",
+   "position": {
+    "lat": 18.953740612180926,
+    "lng": 72.83333154530712
+   },
+   "edgePos": {
+    "edgeId": 2893,
+    "fraction": 0.47698870218188266
+   },
+   "status": "to_patient",
+   "routeEdgeIds": [
+    2893,
+    3903,
+    2817,
+    1648,
+    2827,
+    3904,
+    2825,
+    3907,
+    3910,
+    5197,
+    1906,
+    3267,
+    2607,
+    3914,
+    2033,
+    3408,
+    3404,
+    3400,
+    4188,
+    5536,
+    3600,
+    3410,
+    3393,
+    4178,
+    3406,
+    5966,
+    6902,
+    3917,
+    5903,
+    3969,
+    5592,
+    3384,
+    4301,
+    4350,
+    4348,
+    4344,
+    3639,
+    5188,
+    5190,
+    5060,
+    5956,
+    2401,
+    5948,
+    2543,
+    2429,
+    4550
+   ],
+   "casualtyId": "C002",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "B13",
+   "kind": "BLS",
+   "position": {
+    "lat": 19.004022510258267,
+    "lng": 72.8309635216027
+   },
+   "edgePos": {
+    "edgeId": 5059,
+    "fraction": 0.2095100168959693
+   },
+   "status": "to_hospital",
+   "routeEdgeIds": [
+    5059,
+    5191,
+    5186,
+    3638,
+    4347,
+    4354,
+    4352,
+    3387,
+    5593,
+    3970,
+    6226,
+    2281,
+    2295,
+    3227,
+    3218,
+    6600,
+    5306,
+    2307,
+    5223,
+    2298,
+    4118
+   ],
+   "casualtyId": "C014",
+   "hospitalId": "H113561019"
+  },
+  {
+   "id": "B14",
+   "kind": "BLS",
+   "position": {
+    "lat": 19.00741,
+    "lng": 72.83784
+   },
+   "edgePos": {
+    "edgeId": 6061,
+    "fraction": 0.26063829787233966
+   },
+   "status": "to_hospital",
+   "routeEdgeIds": [
+    6059,
+    6062,
+    6063,
+    5805,
+    4355,
+    4179,
+    4423,
+    2398,
+    4194,
+    5750,
+    2378,
+    4202,
+    4200,
+    5292,
+    4205,
+    4212,
+    4254,
+    5718,
+    4250,
+    4257,
+    4005,
+    5918,
+    5916,
+    5919,
+    2323,
+    3575,
+    3565,
+    2298,
+    4118
+   ],
+   "casualtyId": "C003",
+   "hospitalId": "H113561019"
+  }
+ ],
+ "hospitals": [
+  {
+   "id": "H46715024",
+   "name": "Bombay Hospital",
+   "position": {
+    "lat": 18.94083,
+    "lng": 72.82803
+   },
+   "nodeId": 960,
+   "traumaCapable": false,
+   "hasIcu": true,
+   "beds": {
+    "total": 250,
+    "available": 162,
+    "icuTotal": 20,
+    "icuAvailable": 13
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H207376648",
+   "name": "Cama Hospital",
+   "position": {
+    "lat": 18.94225,
+    "lng": 72.8321
+   },
+   "nodeId": 2477,
+   "traumaCapable": false,
+   "hasIcu": true,
+   "beds": {
+    "total": 250,
+    "available": 151,
+    "icuTotal": 20,
+    "icuAvailable": 12
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H430223744",
+   "name": "Dr. Babasaheb Ambedkar Memorial Central Railway Hospital",
+   "position": {
+    "lat": 18.98017,
+    "lng": 72.83353
+   },
+   "nodeId": 1338,
+   "traumaCapable": true,
+   "hasIcu": true,
+   "beds": {
+    "total": 400,
+    "available": 293,
+    "icuTotal": 32,
+    "icuAvailable": 23
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H803325198",
+   "name": "J. J. Hospital",
+   "position": {
+    "lat": 18.96383,
+    "lng": 72.83446
+   },
+   "nodeId": 1471,
+   "traumaCapable": true,
+   "hasIcu": true,
+   "beds": {
+    "total": 2844,
+    "available": 1987,
+    "icuTotal": 228,
+    "icuAvailable": 159
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H1121494180",
+   "name": "Jagjivan Ram Hospital",
+   "position": {
+    "lat": 18.97043,
+    "lng": 72.82406
+   },
+   "nodeId": 673,
+   "traumaCapable": false,
+   "hasIcu": true,
+   "beds": {
+    "total": 250,
+    "available": 165,
+    "icuTotal": 20,
+    "icuAvailable": 13
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H113561019",
+   "name": "Mahatma Gandhi Memorial Hospital",
+   "position": {
+    "lat": 18.99711,
+    "lng": 72.84207
+   },
+   "nodeId": 1672,
+   "traumaCapable": true,
+   "hasIcu": true,
+   "beds": {
+    "total": 600,
+    "available": 396,
+    "icuTotal": 48,
+    "icuAvailable": 32
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 59
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H1289053364",
+   "name": "Masina Hospital",
+   "position": {
+    "lat": 18.9747,
+    "lng": 72.83594
+   },
+   "nodeId": 1501,
+   "traumaCapable": true,
+   "hasIcu": true,
+   "beds": {
+    "total": 400,
+    "available": 261,
+    "icuTotal": 32,
+    "icuAvailable": 21
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H107441511",
+   "name": "St George Hospital",
+   "position": {
+    "lat": 18.94175,
+    "lng": 72.83796
+   },
+   "nodeId": 1356,
+   "traumaCapable": true,
+   "hasIcu": true,
+   "beds": {
+    "total": 600,
+    "available": 345,
+    "icuTotal": 48,
+    "icuAvailable": 28
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H1289063015",
+   "name": "Wockhardt Hospitals, South Mumbai",
+   "position": {
+    "lat": 18.97521,
+    "lng": 72.82397
+   },
+   "nodeId": 717,
+   "traumaCapable": false,
+   "hasIcu": true,
+   "beds": {
+    "total": 120,
+    "available": 74,
+    "icuTotal": 10,
+    "icuAvailable": 6
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  },
+  {
+   "id": "H207376654",
+   "name": "गोकुळदास तेजपाल रुग्णालय",
+   "position": {
+    "lat": 18.94477,
+    "lng": 72.8318
+   },
+   "nodeId": 1019,
+   "traumaCapable": true,
+   "hasIcu": true,
+   "beds": {
+    "total": 400,
+    "available": 280,
+    "icuTotal": 32,
+    "icuAvailable": 22
+   },
+   "supplies": {
+    "bloodUnits": 40,
+    "oxygenUnits": 60
+   },
+   "edQueue": [],
+   "provenance": {
+    "location": "osm",
+    "capacity": "simulated",
+    "capability": "simulated"
+   }
+  }
+ ],
+ "closedEdgeIds": [
+  2338,
+  2346,
+  2350,
+  2367,
+  3921,
+  5476,
+  5827,
+  5844
+ ],
+ "decisions": [
+  {
+   "id": "D0003",
+   "simMin": 1,
+   "kind": "assignment",
+   "status": "confirmed",
+   "casualtyId": "C013",
+   "ambulanceId": "A04",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 9.6,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 100,
+    "waitingFactor": 1,
+    "totalCost": -86.6
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H46715024",
+     "rejectedBecause": "Bombay Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H207376648",
+     "rejectedBecause": "Cama Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1121494180",
+     "rejectedBecause": "Jagjivan Ram Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1289063015",
+     "rejectedBecause": "Wockhardt Hospitals, South Mumbai: not trauma-capable"
+    }
+   ],
+   "reason": "A04 to C013 (RED). 9.6 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital. Mahatma Gandhi Memorial Hospital is trauma-capable."
+  },
+  {
+   "id": "D0004",
+   "simMin": 1,
+   "kind": "assignment",
+   "status": "confirmed",
+   "casualtyId": "C012",
+   "ambulanceId": "A05",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 11.2,
+    "travelToHospitalMin": 7.6,
+    "loadPenaltyMin": 0,
+    "severityWeight": 100,
+    "waitingFactor": 1,
+    "totalCost": -81.2
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H46715024",
+     "rejectedBecause": "Bombay Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H207376648",
+     "rejectedBecause": "Cama Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1121494180",
+     "rejectedBecause": "Jagjivan Ram Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1289063015",
+     "rejectedBecause": "Wockhardt Hospitals, South Mumbai: not trauma-capable"
+    }
+   ],
+   "reason": "A05 to C012 (RED). 11.2 min to scene, 7.6 min on to Mahatma Gandhi Memorial Hospital. Mahatma Gandhi Memorial Hospital is trauma-capable."
+  },
+  {
+   "id": "D0005",
+   "simMin": 1,
+   "kind": "assignment",
+   "status": "confirmed",
+   "casualtyId": "C002",
+   "ambulanceId": "A03",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 8,
+    "travelToHospitalMin": 7.6,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1,
+    "totalCost": -24.4
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 7.9,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 9.3,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "A03 to C002 (YELLOW). 8 min to scene, 7.6 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0006",
+   "simMin": 1,
+   "kind": "assignment",
+   "status": "confirmed",
+   "casualtyId": "C007",
+   "ambulanceId": "B06",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 4.6,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1,
+    "totalCost": -31.6
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 4.8,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 6.2,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B06 to C007 (YELLOW). 4.6 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0007",
+   "simMin": 1,
+   "kind": "assignment",
+   "status": "confirmed",
+   "casualtyId": "C006",
+   "ambulanceId": "B07",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 7,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1,
+    "totalCost": -29.2
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 4.8,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 6.2,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B07 to C006 (YELLOW). 7 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0008",
+   "simMin": 1,
+   "kind": "assignment",
+   "status": "confirmed",
+   "casualtyId": "C014",
+   "ambulanceId": "B09",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 9.5,
+    "travelToHospitalMin": 7.6,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1,
+    "totalCost": -22.8
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 7.9,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 9.3,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B09 to C014 (YELLOW). 9.5 min to scene, 7.6 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0009",
+   "simMin": 1,
+   "kind": "assignment",
+   "status": "confirmed",
+   "casualtyId": "C015",
+   "ambulanceId": "B10",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 16.5,
+    "travelToHospitalMin": 7.6,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1,
+    "totalCost": -15.9
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 7.9,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 9.3,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B10 to C015 (YELLOW). 16.5 min to scene, 7.6 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0010",
+   "simMin": 1,
+   "kind": "assignment",
+   "status": "confirmed",
+   "casualtyId": "C010",
+   "ambulanceId": "B13",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 8,
+    "travelToHospitalMin": 7.6,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1,
+    "totalCost": -24.4
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 7.9,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 9.3,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B13 to C010 (YELLOW). 8 min to scene, 7.6 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0011",
+   "simMin": 1,
+   "kind": "assignment",
+   "status": "confirmed",
+   "casualtyId": "C009",
+   "ambulanceId": "B08",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 14.3,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 10,
+    "waitingFactor": 1,
+    "totalCost": 8.1
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 4.8,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 6.2,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B08 to C009 (GREEN). 14.3 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0012",
+   "simMin": 1,
+   "kind": "assignment",
+   "status": "confirmed",
+   "casualtyId": "C005",
+   "ambulanceId": "B11",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 14.2,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 10,
+    "waitingFactor": 1,
+    "totalCost": 8
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 4.8,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 6.2,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B11 to C005 (GREEN). 14.2 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0013",
+   "simMin": 1,
+   "kind": "assignment",
+   "status": "confirmed",
+   "casualtyId": "C008",
+   "ambulanceId": "B12",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 13.6,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 10,
+    "waitingFactor": 1,
+    "totalCost": 7.3
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 4.8,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 6.2,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B12 to C008 (GREEN). 13.6 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0014",
+   "simMin": 1,
+   "kind": "assignment",
+   "status": "confirmed",
+   "casualtyId": "C011",
+   "ambulanceId": "B14",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 9.6,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 10,
+    "waitingFactor": 1,
+    "totalCost": 3.4
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 4.8,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 6.2,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B14 to C011 (GREEN). 9.6 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0015",
+   "simMin": 2,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C012",
+   "ambulanceId": "A03",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 7.2,
+    "travelToHospitalMin": 7.6,
+    "loadPenaltyMin": 0,
+    "severityWeight": 100,
+    "waitingFactor": 1.03,
+    "totalCost": -88.5
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H46715024",
+     "rejectedBecause": "Bombay Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H207376648",
+     "rejectedBecause": "Cama Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1121494180",
+     "rejectedBecause": "Jagjivan Ram Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1289063015",
+     "rejectedBecause": "Wockhardt Hospitals, South Mumbai: not trauma-capable"
+    }
+   ],
+   "reason": "A03 reassigned to C012 (RED). 7.2 min to scene, 7.6 min on to Mahatma Gandhi Memorial Hospital. Mahatma Gandhi Memorial Hospital is trauma-capable."
+  },
+  {
+   "id": "D0016",
+   "simMin": 2,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C007",
+   "ambulanceId": "B14",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 8.8,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1.03,
+    "totalCost": -28.8
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 4.8,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 6.2,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B14 reassigned to C007 (YELLOW). 8.8 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0017",
+   "simMin": 3,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C008",
+   "ambulanceId": "B11",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 12.4,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 10,
+    "waitingFactor": 1.07,
+    "totalCost": 5.4
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 4.8,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 6.2,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B11 reassigned to C008 (GREEN). 12.4 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0018",
+   "simMin": 3,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C005",
+   "ambulanceId": "B12",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 12.4,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 10,
+    "waitingFactor": 1.07,
+    "totalCost": 5.5
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 4.8,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 6.2,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B12 reassigned to C005 (GREEN). 12.4 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0019",
+   "simMin": 4,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C007",
+   "ambulanceId": "B08",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 12.4,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1.1,
+    "totalCost": -27.8
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 4.8,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 6.2,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B08 reassigned to C007 (YELLOW). 12.4 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0020",
+   "simMin": 4,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C002",
+   "ambulanceId": "B12",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 14.9,
+    "travelToHospitalMin": 7.6,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1.1,
+    "totalCost": -21.5
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 7.9,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 9.3,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B12 reassigned to C002 (YELLOW). 14.9 min to scene, 7.6 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0021",
+   "simMin": 4,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C005",
+   "ambulanceId": "B11",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 11.5,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 10,
+    "waitingFactor": 1.1,
+    "totalCost": 4.2
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 4.8,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 6.2,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B11 reassigned to C005 (GREEN). 11.5 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0022",
+   "simMin": 5,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C007",
+   "ambulanceId": "B07",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 5.9,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1.13,
+    "totalCost": -35.7
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 4.8,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 6.2,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B07 reassigned to C007 (YELLOW). 5.9 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0023",
+   "simMin": 5,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C006",
+   "ambulanceId": "B11",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 10.6,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1.13,
+    "totalCost": -31
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 4.8,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 6.2,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B11 reassigned to C006 (YELLOW). 10.6 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0024",
+   "simMin": 6,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C003",
+   "ambulanceId": "A01",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 9.3,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 100,
+    "waitingFactor": 1.17,
+    "totalCost": -103.7
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H46715024",
+     "rejectedBecause": "Bombay Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H207376648",
+     "rejectedBecause": "Cama Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1121494180",
+     "rejectedBecause": "Jagjivan Ram Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1289063015",
+     "rejectedBecause": "Wockhardt Hospitals, South Mumbai: not trauma-capable"
+    }
+   ],
+   "reason": "A01 reassigned to C003 (RED). 9.3 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital. Mahatma Gandhi Memorial Hospital is trauma-capable."
+  },
+  {
+   "id": "D0025",
+   "simMin": 6,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C004",
+   "ambulanceId": "A02",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 11.7,
+    "travelToHospitalMin": 3.8,
+    "loadPenaltyMin": 0,
+    "severityWeight": 100,
+    "waitingFactor": 1.17,
+    "totalCost": -101.1
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H46715024",
+     "rejectedBecause": "Bombay Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H207376648",
+     "rejectedBecause": "Cama Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1121494180",
+     "rejectedBecause": "Jagjivan Ram Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1289063015",
+     "rejectedBecause": "Wockhardt Hospitals, South Mumbai: not trauma-capable"
+    }
+   ],
+   "reason": "A02 reassigned to C004 (RED). 11.7 min to scene, 3.8 min on to Mahatma Gandhi Memorial Hospital. Mahatma Gandhi Memorial Hospital is trauma-capable."
+  },
+  {
+   "id": "D0026",
+   "simMin": 7,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C003",
+   "ambulanceId": "B14",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 5.9,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 100,
+    "waitingFactor": 1.2,
+    "totalCost": -105.4
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H46715024",
+     "rejectedBecause": "Bombay Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H207376648",
+     "rejectedBecause": "Cama Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1121494180",
+     "rejectedBecause": "Jagjivan Ram Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1289063015",
+     "rejectedBecause": "Wockhardt Hospitals, South Mumbai: not trauma-capable"
+    }
+   ],
+   "reason": "B14 reassigned to C003 (RED). 5.9 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital. Mahatma Gandhi Memorial Hospital is trauma-capable."
+  },
+  {
+   "id": "D0027",
+   "simMin": 7,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C002",
+   "ambulanceId": "B09",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 4.6,
+    "travelToHospitalMin": 7.6,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1.2,
+    "totalCost": -35.8
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 7.9,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 9.3,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B09 reassigned to C002 (YELLOW). 4.6 min to scene, 7.6 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0028",
+   "simMin": 7,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C006",
+   "ambulanceId": "B10",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 8.2,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1.2,
+    "totalCost": -36.1
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 4.8,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 6.2,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B10 reassigned to C006 (YELLOW). 8.2 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0029",
+   "simMin": 7,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C014",
+   "ambulanceId": "B13",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 2.1,
+    "travelToHospitalMin": 7.6,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1.2,
+    "totalCost": -38.3
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 7.9,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 9.3,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B13 reassigned to C014 (YELLOW). 2.1 min to scene, 7.6 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0030",
+   "simMin": 8,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C003",
+   "ambulanceId": "A05",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 7,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 100,
+    "waitingFactor": 1.23,
+    "totalCost": -112.6
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H46715024",
+     "rejectedBecause": "Bombay Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H207376648",
+     "rejectedBecause": "Cama Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1121494180",
+     "rejectedBecause": "Jagjivan Ram Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1289063015",
+     "rejectedBecause": "Wockhardt Hospitals, South Mumbai: not trauma-capable"
+    }
+   ],
+   "reason": "A05 reassigned to C003 (RED). 7 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital. Mahatma Gandhi Memorial Hospital is trauma-capable. waiting 7 min, priority raised 1.23x."
+  },
+  {
+   "id": "D0031",
+   "simMin": 8,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C018",
+   "ambulanceId": "B07",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 5.9,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 100,
+    "waitingFactor": 1.03,
+    "totalCost": -88.7
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H46715024",
+     "rejectedBecause": "Bombay Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H207376648",
+     "rejectedBecause": "Cama Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1121494180",
+     "rejectedBecause": "Jagjivan Ram Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1289063015",
+     "rejectedBecause": "Wockhardt Hospitals, South Mumbai: not trauma-capable"
+    }
+   ],
+   "reason": "B07 reassigned to C018 (RED). 5.9 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital. Mahatma Gandhi Memorial Hospital is trauma-capable."
+  },
+  {
+   "id": "D0032",
+   "simMin": 8,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C015",
+   "ambulanceId": "B12",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 14.9,
+    "travelToHospitalMin": 7.6,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1.23,
+    "totalCost": -26.9
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 7.9,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 9.3,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B12 reassigned to C015 (YELLOW). 14.9 min to scene, 7.6 min on to Mahatma Gandhi Memorial Hospital. waiting 7 min, priority raised 1.23x."
+  },
+  {
+   "id": "D0033",
+   "simMin": 9,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C018",
+   "ambulanceId": "B08",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 7.4,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 100,
+    "waitingFactor": 1.07,
+    "totalCost": -90.5
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H46715024",
+     "rejectedBecause": "Bombay Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H207376648",
+     "rejectedBecause": "Cama Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1121494180",
+     "rejectedBecause": "Jagjivan Ram Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1289063015",
+     "rejectedBecause": "Wockhardt Hospitals, South Mumbai: not trauma-capable"
+    }
+   ],
+   "reason": "B08 reassigned to C018 (RED). 7.4 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital. Mahatma Gandhi Memorial Hospital is trauma-capable."
+  },
+  {
+   "id": "D0034",
+   "simMin": 10,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C004",
+   "ambulanceId": "B11",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 5.2,
+    "travelToHospitalMin": 3.8,
+    "loadPenaltyMin": 0,
+    "severityWeight": 100,
+    "waitingFactor": 1.3,
+    "totalCost": -116
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H46715024",
+     "rejectedBecause": "Bombay Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H207376648",
+     "rejectedBecause": "Cama Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1121494180",
+     "rejectedBecause": "Jagjivan Ram Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1289063015",
+     "rejectedBecause": "Wockhardt Hospitals, South Mumbai: not trauma-capable"
+    }
+   ],
+   "reason": "B11 reassigned to C004 (RED). 5.2 min to scene, 3.8 min on to Mahatma Gandhi Memorial Hospital. Mahatma Gandhi Memorial Hospital is trauma-capable. waiting 9 min, priority raised 1.3x."
+  },
+  {
+   "id": "D0035",
+   "simMin": 10,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C018",
+   "ambulanceId": "A04",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 0.7,
+    "travelToHospitalMin": 3.7,
+    "loadPenaltyMin": 0,
+    "severityWeight": 100,
+    "waitingFactor": 1.1,
+    "totalCost": -105.6
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H46715024",
+     "rejectedBecause": "Bombay Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H207376648",
+     "rejectedBecause": "Cama Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1121494180",
+     "rejectedBecause": "Jagjivan Ram Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1289063015",
+     "rejectedBecause": "Wockhardt Hospitals, South Mumbai: not trauma-capable"
+    }
+   ],
+   "reason": "A04 reassigned to C018 (RED). 0.7 min to scene, 3.7 min on to Mahatma Gandhi Memorial Hospital. Mahatma Gandhi Memorial Hospital is trauma-capable."
+  },
+  {
+   "id": "D0036",
+   "simMin": 10,
+   "kind": "assignment",
+   "status": "confirmed",
+   "casualtyId": "C027",
+   "ambulanceId": "B06",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 3.8,
+    "travelToHospitalMin": 3.9,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1.1,
+    "totalCost": -36.3
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 5,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 6.3,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B06 to C027 (YELLOW). 3.8 min to scene, 3.9 min on to Mahatma Gandhi Memorial Hospital."
+  },
+  {
+   "id": "D0037",
+   "simMin": 11,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C010",
+   "ambulanceId": "B09",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 2.1,
+    "travelToHospitalMin": 7.6,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1.33,
+    "totalCost": -43.6
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 7.9,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 9.3,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B09 reassigned to C010 (YELLOW). 2.1 min to scene, 7.6 min on to Mahatma Gandhi Memorial Hospital. waiting 10 min, priority raised 1.33x."
+  },
+  {
+   "id": "D0038",
+   "simMin": 12,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C013",
+   "ambulanceId": "A01",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 5.9,
+    "travelToHospitalMin": 3.8,
+    "loadPenaltyMin": 0,
+    "severityWeight": 100,
+    "waitingFactor": 1.37,
+    "totalCost": -127
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H46715024",
+     "rejectedBecause": "Bombay Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H207376648",
+     "rejectedBecause": "Cama Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1121494180",
+     "rejectedBecause": "Jagjivan Ram Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1289063015",
+     "rejectedBecause": "Wockhardt Hospitals, South Mumbai: not trauma-capable"
+    }
+   ],
+   "reason": "A01 reassigned to C013 (RED). 5.9 min to scene, 3.8 min on to Mahatma Gandhi Memorial Hospital. Mahatma Gandhi Memorial Hospital is trauma-capable. waiting 11 min, priority raised 1.37x."
+  },
+  {
+   "id": "D0039",
+   "simMin": 12,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C003",
+   "ambulanceId": "A02",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 6.5,
+    "travelToHospitalMin": 3.8,
+    "loadPenaltyMin": 0,
+    "severityWeight": 100,
+    "waitingFactor": 1.37,
+    "totalCost": -126.3
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H46715024",
+     "rejectedBecause": "Bombay Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H207376648",
+     "rejectedBecause": "Cama Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1121494180",
+     "rejectedBecause": "Jagjivan Ram Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1289063015",
+     "rejectedBecause": "Wockhardt Hospitals, South Mumbai: not trauma-capable"
+    }
+   ],
+   "reason": "A02 reassigned to C003 (RED). 6.5 min to scene, 3.8 min on to Mahatma Gandhi Memorial Hospital. Mahatma Gandhi Memorial Hospital is trauma-capable. waiting 11 min, priority raised 1.37x."
+  },
+  {
+   "id": "D0040",
+   "simMin": 12,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C017",
+   "ambulanceId": "B06",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 2,
+    "travelToHospitalMin": 3.9,
+    "loadPenaltyMin": 0,
+    "severityWeight": 100,
+    "waitingFactor": 1.17,
+    "totalCost": -105.8
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H46715024",
+     "rejectedBecause": "Bombay Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H207376648",
+     "rejectedBecause": "Cama Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1121494180",
+     "rejectedBecause": "Jagjivan Ram Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1289063015",
+     "rejectedBecause": "Wockhardt Hospitals, South Mumbai: not trauma-capable"
+    }
+   ],
+   "reason": "B06 reassigned to C017 (RED). 2 min to scene, 3.9 min on to Mahatma Gandhi Memorial Hospital. Mahatma Gandhi Memorial Hospital is trauma-capable."
+  },
+  {
+   "id": "D0041",
+   "simMin": 13,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C003",
+   "ambulanceId": "B07",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 1,
+    "travelToHospitalMin": 3.8,
+    "loadPenaltyMin": 0,
+    "severityWeight": 100,
+    "waitingFactor": 1.4,
+    "totalCost": -130.1
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H46715024",
+     "rejectedBecause": "Bombay Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H207376648",
+     "rejectedBecause": "Cama Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1121494180",
+     "rejectedBecause": "Jagjivan Ram Hospital: not trauma-capable"
+    },
+    {
+     "hospitalId": "H1289063015",
+     "rejectedBecause": "Wockhardt Hospitals, South Mumbai: not trauma-capable"
+    }
+   ],
+   "reason": "B07 reassigned to C003 (RED). 1 min to scene, 3.8 min on to Mahatma Gandhi Memorial Hospital. Mahatma Gandhi Memorial Hospital is trauma-capable. waiting 12 min, priority raised 1.4x."
+  },
+  {
+   "id": "D0042",
+   "simMin": 14,
+   "kind": "reassignment",
+   "status": "confirmed",
+   "casualtyId": "C002",
+   "ambulanceId": "B12",
+   "hospitalId": "H113561019",
+   "factors": {
+    "travelToCasualtyMin": 14.9,
+    "travelToHospitalMin": 7.6,
+    "loadPenaltyMin": 0,
+    "severityWeight": 40,
+    "waitingFactor": 1.43,
+    "totalCost": -34.9
+   },
+   "alternatives": [
+    {
+     "hospitalId": "H430223744",
+     "cost": 7.9,
+     "rejectedBecause": "higher total cost"
+    },
+    {
+     "hospitalId": "H1289053364",
+     "cost": 9.3,
+     "rejectedBecause": "higher total cost"
+    }
+   ],
+   "reason": "B12 reassigned to C002 (YELLOW). 14.9 min to scene, 7.6 min on to Mahatma Gandhi Memorial Hospital. waiting 13 min, priority raised 1.43x."
+  }
+ ],
+ "pending": [],
+ "escalations": [],
+ "metrics": {
+  "meanResponseMin": 7.833333333333333,
+  "shareWithinTarget": 1,
+  "redToTraumaShare": 0,
+  "meanAdmissionMinBySeverity": {
+   "yellow": 9
+  },
+  "overloadEvents": 0,
+  "peakHospitalLoad": 0.42500000000000004,
+  "pastLimitCount": 0,
+  "unservedCount": 25,
+  "loadSpread": 0.04529101892717051
+ },
+ "ledgerHead": {
+  "seq": -1,
+  "hash": "0000000000000000000000000000000000000000000000000000000000000000"
+ }
+}

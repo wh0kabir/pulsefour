@@ -1,11 +1,112 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import PulseLine from '../components/PulseLine.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import graph from '../../public/data/graph.json';
+import hospitalFile from '../../public/data/hospitals.json';
+
+const nodeCount = graph.meta.nodeCount.toLocaleString();
+const edgeCount = graph.meta.edgeCount.toLocaleString();
+const hospitalCount = hospitalFile.meta.hospitalCount;
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Pulse — disaster control-room decision support">
+  <main class="mx-auto max-w-5xl px-6">
+    <!-- Hero: the one orchestrated moment (section 14). -->
+    <section class="flex min-h-[80vh] flex-col justify-center py-20">
+      <PulseLine class="mb-10 h-14 w-full max-w-md" />
+
+      <h1 class="font-display text-5xl leading-[1.05] font-semibold tracking-tight sm:text-7xl">
+        <span class="ice-text">Pulse</span>
+      </h1>
+
+      <p class="mt-6 max-w-[62ch] text-lg leading-relaxed text-mist sm:text-xl">
+        A control-room tool that stops mass-casualty patients all going to the nearest
+        hospital, shows its reasoning, and keeps a record nobody can quietly edit.
+      </p>
+
+      <div class="mt-10 flex flex-wrap items-center gap-3">
+        <a
+          class="rounded-lg bg-ice-600 px-5 py-2.5 text-sm font-medium text-matte transition-colors hover:bg-ice-500"
+          href="/console">Open the console</a
+        >
+        <a
+          class="rounded-lg border border-hairline px-5 py-2.5 text-sm font-medium text-frost transition-colors hover:border-ice-500"
+          href="/about">How it works</a
+        >
+      </div>
+
+      <dl class="mt-14 flex flex-wrap gap-x-10 gap-y-4 text-sm">
+        <div>
+          <dt class="text-mist">Real road segments</dt>
+          <dd class="tabular font-display text-xl text-frost">{edgeCount}</dd>
+        </div>
+        <div>
+          <dt class="text-mist">Junctions</dt>
+          <dd class="tabular font-display text-xl text-frost">{nodeCount}</dd>
+        </div>
+        <div>
+          <dt class="text-mist">Hospitals mapped</dt>
+          <dd class="tabular font-display text-xl text-frost">{hospitalCount}</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- What the demo shows. -->
+    <section class="border-t border-hairline py-16">
+      <h2 class="font-display text-xl font-medium">What you will see</h2>
+      <ol class="mt-6 grid gap-4 sm:grid-cols-2">
+        <li class="rounded-xl bg-slate p-5">
+          <p class="text-sm font-medium text-ice-300">1. A crowd crush at Parel</p>
+          <p class="mt-2 text-sm leading-relaxed text-mist">
+            Casualties appear in three waves and are triaged with the standard START
+            colours. Fourteen ambulances is deliberately too few.
+          </p>
+        </li>
+        <li class="rounded-xl bg-slate p-5">
+          <p class="text-sm font-medium text-ice-300">2. The plan re-forms every minute</p>
+          <p class="mt-2 text-sm leading-relaxed text-mist">
+            Around minute 12 a main approach road closes. Around minute 20 the nearest
+            large hospital runs out of beds. Watch the assignments change.
+          </p>
+        </li>
+        <li class="rounded-xl bg-slate p-5">
+          <p class="text-sm font-medium text-ice-300">3. Every decision explains itself</p>
+          <p class="mt-2 text-sm leading-relaxed text-mist">
+            Open any decision to see the travel times, the hospital load penalty, the
+            severity weight, and which alternatives were rejected and why.
+          </p>
+        </li>
+        <li class="rounded-xl bg-slate p-5">
+          <p class="text-sm font-medium text-ice-300">4. The record resists editing</p>
+          <p class="mt-2 text-sm leading-relaxed text-mist">
+            Pin a checkpoint, then use the demo tools to tamper with the log. Verification
+            names the first row that no longer adds up.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- What is real and what is simulated (section 13). -->
+    <section class="border-t border-hairline py-16">
+      <h2 class="font-display text-xl font-medium">What is real and what is simulated</h2>
+      <dl class="mt-6 grid gap-x-10 gap-y-6 sm:grid-cols-2">
+        <div class="rounded-xl bg-slate p-5">
+          <dt class="text-sm font-medium text-ice-300">Real</dt>
+          <dd class="mt-2 text-sm leading-relaxed text-mist">
+            The street network and hospital locations of South Mumbai's eastern spine,
+            extracted from OpenStreetMap. Routing runs on that real graph, so a closed
+            road changes real travel times.
+          </dd>
+        </div>
+        <div class="rounded-xl bg-slate p-5">
+          <dt class="text-sm font-medium text-ice-300">Simulated</dt>
+          <dd class="mt-2 text-sm leading-relaxed text-mist">
+            Casualties, ambulances, bed counts, supplies and every timing parameter.
+            Nothing here is a live feed. Each assumption is listed on the About page.
+          </dd>
+        </div>
+      </dl>
+    </section>
+  </main>
 </Layout>
