@@ -112,6 +112,11 @@ function scheduleTick(): void {
       if (scenario && engine.currentMin >= scenario.durationMin) {
         engine.pause();
         emitState();
+        post({
+          type: 'complete',
+          simMin: engine.currentMin,
+          durationMin: scenario.durationMin,
+        });
         return;
       }
     } catch (error) {

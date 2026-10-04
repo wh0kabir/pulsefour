@@ -22,6 +22,9 @@ const PULSE_VERSION = `${pkg.version}+${sha}`;
 
 // https://astro.build/config
 export default defineConfig({
+  // Absolute URLs in /llms.txt need the deployed origin. Netlify sets URL at
+  // build time; override with PULSE_SITE for any other host.
+  site: process.env.PULSE_SITE ?? process.env.URL ?? 'https://pulsefour.netlify.app',
   // Locked decision 11: browser only, static deploy, no backend.
   output: 'static',
   integrations: [react()],

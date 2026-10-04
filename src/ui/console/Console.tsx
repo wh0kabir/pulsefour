@@ -7,6 +7,7 @@ import DecisionFeed from '../panels/DecisionFeed';
 import OperatorPanel from '../panels/OperatorPanel';
 import ScenarioPanel from '../panels/ScenarioPanel';
 import { useStore, type Tab } from '../state/store';
+import RunReport from './RunReport';
 import Tour from './Tour';
 
 /**
@@ -73,13 +74,15 @@ export default function Console() {
         </div>
       )}
 
-      <div className="grid min-h-0 flex-1 grid-cols-[13.5rem_1fr_16rem] gap-px bg-hairline">
-        <div className="grid min-h-0 grid-rows-2 gap-px bg-hairline">
+      <div className="grid min-h-0 flex-1 grid-cols-[16rem_1fr_16rem] gap-px bg-hairline">
+        {/* Scenario takes only the height it needs; the operator, who has real
+            work to do, gets everything left over. */}
+        <div className="grid min-h-0 grid-rows-[auto_1fr] gap-px bg-hairline">
           <ScenarioPanel />
           <OperatorPanel />
         </div>
 
-        <section className="relative min-h-0 bg-matte">
+        <section className="relative min-h-0 bg-matte" data-tour="map">
           {/* The map stays mounted across tabs so MapLibre does not re-upload
               the whole road network every time the operator looks elsewhere. */}
           <div className={tab === 'map' ? 'absolute inset-0' : 'invisible absolute inset-0'}>
@@ -100,7 +103,7 @@ export default function Console() {
         <DecisionFeed />
       </div>
 
-      <div className="flex items-center gap-1 border-t border-hairline px-4 py-1.5" role="tablist">
+      <div className="flex items-center gap-1 border-t border-hairline px-4 py-1.5" role="tablist" data-tour="tabs">
         {TABS.map(({ id, label }) => (
           <button
             key={id}
@@ -138,6 +141,7 @@ export default function Console() {
       </div>
 
       <Toasts />
+      <RunReport />
     </div>
   );
 }
@@ -155,7 +159,7 @@ function TransportBar() {
   const autoAccept = world?.autoAccept ?? true;
 
   return (
-    <div className="flex flex-wrap items-center gap-2 border-b border-hairline px-4 py-2">
+    <div className="flex flex-wrap items-center gap-2 border-b border-hairline px-4 py-2" data-tour="transport">
       <button
         type="button"
         onClick={running ? pause : play}
@@ -198,26 +202,35 @@ function TransportBar() {
         </span>
       </span>
 
-      <label className="ml-auto flex cursor-pointer items-center gap-2 text-xs text-mist">
+      {/*
+        A plain button, NOT wrapped in a <label>. A label treats a nested
+        button as its control and re-dispatches the click to it, so every
+        press fired twice and the switch appeared stuck.
+      */}
+      <button
+        type="button"
+        role="switch"
+        aria-checked={autoAccept}
+        aria-label="Auto-accept assignments"
+        onClick={() => setAutoAccept(!autoAccept)}
+        className="ml-auto flex cursor-pointer items-center gap-2 text-xs text-mist transition-colors hover:text-frost"
+      >
         Auto-accept
-        <button
-          type="button"
-          role="switch"
-          aria-checked={autoAccept}
-          onClick={() => setAutoAccept(!autoAccept)}
+        <span
+          aria-hidden="true"
           className={
-            'relative h-5 w-9 rounded-full transition-colors ' +
+            'relative h-5 w-9 shrink-0 rounded-full transition-colors ' +
             (autoAccept ? 'bg-ice-600' : 'bg-graphite')
           }
         >
           <span
             className={
-              'absolute top-0.5 h-4 w-4 rounded-full bg-frost transition-transform ' +
-              (autoAccept ? 'translate-x-4.5' : 'translate-x-0.5')
+              'absolute top-0.5 left-0.5 h-4 w-4 rounded-full bg-frost transition-transform ' +
+              (autoAccept ? 'translate-x-4' : 'translate-x-0')
             }
           />
-        </button>
-      </label>
+        </span>
+      </button>
     </div>
   );
 }
@@ -238,7 +251,7 @@ function HealthStrip() {
   const response = world?.metrics.meanResponseMin ?? 0;
 
   return (
-    <div className="flex flex-wrap items-center gap-x-7 gap-y-1 border-b border-hairline px-4 py-2 text-xs text-mist">
+    <div className="flex flex-wrap items-center gap-x-7 gap-y-1 border-b border-hairline px-4 py-2 text-xs text-mist" data-tour="health">
       <span>
         <span className="tabular text-frost">{waiting}</span> waiting
       </span>

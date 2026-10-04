@@ -100,6 +100,14 @@ export interface Metrics {
   shareWithinTarget: number;
   redToTraumaShare: number;
   meanAdmissionMinBySeverity: Partial<Record<Severity, number>>;
+  /**
+   * How many of each severity actually reached a bed, and how many there were.
+   * Without these the mean admission time is unreadable: a strategy that
+   * admits only its three fastest casualties posts a flattering average while
+   * leaving the rest queued at a full hospital.
+   */
+  admittedBySeverity: Partial<Record<Severity, number>>;
+  totalBySeverity: Partial<Record<Severity, number>>;
   overloadEvents: number;
   peakHospitalLoad: number;
   pastLimitCount: number;
@@ -261,6 +269,8 @@ export type WorkerCommand =
 
 export type WorkerEvent =
   | { type: 'state'; state: WorldState }
+  /** The scenario reached its end. Carries the clock for the run report. */
+  | { type: 'complete'; simMin: number; durationMin: number }
   | { type: 'ledger'; records: LedgerRecord[] }
   | { type: 'comparison'; results: StrategyResult[] }
   | { type: 'verify'; result: VerifyResult }

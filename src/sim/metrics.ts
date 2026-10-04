@@ -53,11 +53,17 @@ export function computeMetrics(
   const redsToTrauma = redsAdmitted.filter((s) => s.deliveredToTrauma === true);
 
   const meanAdmissionMinBySeverity: Partial<Record<Severity, number>> = {};
+  const admittedBySeverity: Partial<Record<Severity, number>> = {};
+  const totalBySeverity: Partial<Record<Severity, number>> = {};
+
   for (const severity of ['red', 'yellow', 'green'] as const) {
-    const values = dispatchable
-      .filter((s) => s.severity === severity)
+    const ofSeverity = dispatchable.filter((s) => s.severity === severity);
+    const values = ofSeverity
       .map((s) => s.admissionMin)
       .filter((v): v is number => v !== undefined);
+
+    totalBySeverity[severity] = ofSeverity.length;
+    admittedBySeverity[severity] = values.length;
     if (values.length > 0) meanAdmissionMinBySeverity[severity] = mean(values);
   }
 
@@ -79,6 +85,8 @@ export function computeMetrics(
     redToTraumaShare:
       redsAdmitted.length > 0 ? redsToTrauma.length / redsAdmitted.length : 0,
     meanAdmissionMinBySeverity,
+    admittedBySeverity,
+    totalBySeverity,
     overloadEvents: acc.overloadEvents,
     peakHospitalLoad: acc.peakHospitalLoad,
     pastLimitCount: dispatchable.filter((s) => s.pastLimit).length,
@@ -93,6 +101,8 @@ export function emptyMetrics(): Metrics {
     shareWithinTarget: 0,
     redToTraumaShare: 0,
     meanAdmissionMinBySeverity: {},
+    admittedBySeverity: {},
+    totalBySeverity: {},
     overloadEvents: 0,
     peakHospitalLoad: 0,
     pastLimitCount: 0,

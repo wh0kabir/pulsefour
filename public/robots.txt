@@ -1,0 +1,7 @@
+# Pulse is a public demo. Everything here is meant to be read.
+User-agent: *
+Allow: /
+
+# Agents: start here.
+# /llms.txt       short index
+# /llms-full.txt  the whole project as plain text

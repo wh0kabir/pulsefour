@@ -41,9 +41,17 @@ interface UiState {
   demoToolsOpen: boolean;
   toasts: Toast[];
 
+  /** Wall-clock milliseconds actually spent running, pauses excluded. */
+  runElapsedMs: number;
+  /** Set when the scenario reaches its end; drives the run report. */
+  completed: { simMin: number; durationMin: number } | null;
+  reportOpen: boolean;
+
   connect: () => void;
   disconnect: () => void;
   setTab: (tab: Tab) => void;
+  closeReport: () => void;
+  openReport: () => void;
   selectDecision: (id: string | null) => void;
   toggleDemoTools: () => void;
   toast: (message: string) => void;
@@ -62,6 +70,8 @@ interface UiState {
 }
 
 let toastId = 0;
+/** Timestamp of the last state message, for the real-time accumulator. */
+let lastStateAt = 0;
 
 export const useStore = create<UiState>((set, get) => ({
   client: null,
@@ -79,6 +89,10 @@ export const useStore = create<UiState>((set, get) => ({
   demoToolsOpen: false,
   toasts: [],
 
+  runElapsedMs: 0,
+  completed: null,
+  reportOpen: false,
+
   connect: () => {
     if (get().client) return;
     const client = new SimulationClient();
@@ -86,8 +100,32 @@ export const useStore = create<UiState>((set, get) => ({
 
     client.on((event) => {
       switch (event.type) {
-        case 'state':
-          set({ world: event.state, connected: true, error: null });
+        case 'state': {
+          // Accumulate real time only across ticks where the clock was
+          // actually running, so pauses do not inflate the figure.
+          const now = Date.now();
+          const previous = get().world;
+          const addMs =
+            previous?.running && event.state.running && lastStateAt > 0
+              ? Math.min(now - lastStateAt, 5000)
+              : 0;
+          lastStateAt = now;
+          set((state) => ({
+            world: event.state,
+            connected: true,
+            error: null,
+            runElapsedMs: state.runElapsedMs + addMs,
+          }));
+          break;
+        }
+
+        case 'complete':
+          set({
+            completed: { simMin: event.simMin, durationMin: event.durationMin },
+            reportOpen: true,
+          });
+          // The report compares against the baselines, so run them now.
+          get().runComparison();
           break;
         case 'ledger':
           set((state) => {
@@ -121,6 +159,8 @@ export const useStore = create<UiState>((set, get) => ({
   },
 
   setTab: (tab) => set({ tab }),
+  closeReport: () => set({ reportOpen: false }),
+  openReport: () => set({ reportOpen: true }),
   selectDecision: (id) => set({ selectedDecisionId: id }),
   toggleDemoTools: () => set((s) => ({ demoToolsOpen: !s.demoToolsOpen })),
 
@@ -142,7 +182,15 @@ export const useStore = create<UiState>((set, get) => ({
 
   reset: () => {
     get().client?.send({ type: 'reset' });
-    set({ ledger: [], verify: null, selectedDecisionId: null });
+    lastStateAt = 0;
+    set({
+      ledger: [],
+      verify: null,
+      selectedDecisionId: null,
+      runElapsedMs: 0,
+      completed: null,
+      reportOpen: false,
+    });
     get().toast('Scenario reset');
   },
 

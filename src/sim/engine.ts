@@ -674,6 +674,30 @@ export class Engine {
       return;
     }
 
+    // An ambulance awaiting approval holds exactly ONE live suggestion.
+    //
+    // With auto-accept off the ambulance never becomes assigned, so the
+    // allocator keeps proposing for it every tick. Without this the queue
+    // grows by a row per ambulance per minute and the operator cannot tell
+    // which suggestion is current. If the new plan is identical there is
+    // nothing to show; if it differs it SUPERSEDES the old one, which stays
+    // in the feed as history but leaves the queue.
+    const existingPendingId = this.pending.find((id) => {
+      const existing = this.decisions.find((d) => d.id === id);
+      return existing?.ambulanceId === plan.ambulanceId;
+    });
+
+    if (existingPendingId) {
+      const existing = this.decisions.find((d) => d.id === existingPendingId);
+      if (
+        existing?.casualtyId === plan.casualtyId &&
+        existing?.hospitalId === plan.hospitalId
+      ) {
+        return;
+      }
+      this.pending = this.pending.filter((id) => id !== existingPendingId);
+    }
+
     const decision = this.makeDecision(
       plan.isReassignment ? 'reassignment' : 'assignment',
       plan.casualtyId,
