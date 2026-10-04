@@ -387,3 +387,24 @@ describe('the audit trail survives a real run (M8 acceptance)', () => {
     }
   });
 });
+
+describe('the pending queue does not fill with duplicates', () => {
+  it('proposes each ambulance-casualty pairing once while awaiting approval', async () => {
+    const engine = newEngine();
+    engine.setAutoAccept(false);
+
+    for (let i = 0; i < 12; i++) await engine.step();
+
+    const state = engine.snapshot();
+    const pairs = state.pending
+      .map((id) => state.decisions.find((d) => d.id === id))
+      .filter((d): d is NonNullable<typeof d> => Boolean(d))
+      .map((d) => `${d.ambulanceId}->${d.casualtyId}`);
+
+    expect(pairs.length).toBeGreaterThan(0);
+    // Every queued suggestion is for a distinct pairing.
+    expect(new Set(pairs).size).toBe(pairs.length);
+    // And no more suggestions than there are ambulances to act on them.
+    expect(pairs.length).toBeLessThanOrEqual(state.ambulances.length);
+  });
+});

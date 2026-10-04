@@ -154,3 +154,36 @@ changes one. Newest last.
   and re-curating hospitals, and gained little: east of the box is Mumbai
   harbour, so there are no roads to add on that side. Say the word if you would
   rather have that.
+
+## Map readability and the operator surface (2026-10-04)
+
+- **Markers are now three distinct silhouettes**, not three circles: casualties
+  are lettered circles (R/Y/G/B), ambulances are chevrons aimed along their
+  bearing, hospitals are a cross in a rounded square. Section 7.5 requires that
+  colour never carries meaning alone and section 13 specifies chevrons; the
+  first pass used circles for everything and met neither.
+- **The sprites are drawn on a canvas at runtime** (`src/ui/map/icons.ts`)
+  rather than using MapLibre `text-field`, which needs font glyph PBFs over the
+  network. The demo has to work offline, so the letters are baked into the
+  images.
+- **A legend** renders those same sprites rather than colour swatches, so what
+  it shows is literally what is on the map.
+- **Selection was unusable when the map was dense.** Added wide invisible hit
+  circles beneath the small art, click-anywhere-empty to deselect, Escape to
+  clear, and a selected sprite variant with a ring. Casualties and ambulances
+  are now inspectable too, not just roads and hospitals.
+- **Follow mode** keeps the camera on the live action. It only moves once the
+  action leaves the middle third of the viewport and never changes zoom:
+  re-centring every tick made the map crawl constantly and fight the reader.
+- **The operator surface was effectively invisible** because auto-accept is on
+  by default, so the system dispatched by itself and the panel sat empty. Added
+  an explicit "Take control" toggle with a banner stating who is dispatching,
+  and an override control that lists alternative hospitals with their free beds.
+- **One live suggestion per ambulance.** With auto-accept off the ambulance
+  never becomes assigned, so the allocator re-proposed for it every tick and the
+  queue grew by roughly a row per ambulance per minute (40 within a few
+  minutes). A new plan for an ambulance now supersedes its pending one, which
+  stays in the feed as history. The queue sits at one row per ambulance.
+- **A six-step guided tour** runs on first visit for anyone meeting the console
+  cold, and stays available behind a "Guide" button. It states what is real and
+  what is simulated in step two rather than burying it.
