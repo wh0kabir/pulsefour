@@ -198,26 +198,35 @@ function TransportBar() {
         </span>
       </span>
 
-      <label className="ml-auto flex cursor-pointer items-center gap-2 text-xs text-mist">
+      {/*
+        A plain button, NOT wrapped in a <label>. A label treats a nested
+        button as its control and re-dispatches the click to it, so every
+        press fired twice and the switch appeared stuck.
+      */}
+      <button
+        type="button"
+        role="switch"
+        aria-checked={autoAccept}
+        aria-label="Auto-accept assignments"
+        onClick={() => setAutoAccept(!autoAccept)}
+        className="ml-auto flex cursor-pointer items-center gap-2 text-xs text-mist transition-colors hover:text-frost"
+      >
         Auto-accept
-        <button
-          type="button"
-          role="switch"
-          aria-checked={autoAccept}
-          onClick={() => setAutoAccept(!autoAccept)}
+        <span
+          aria-hidden="true"
           className={
-            'relative h-5 w-9 rounded-full transition-colors ' +
+            'relative h-5 w-9 shrink-0 rounded-full transition-colors ' +
             (autoAccept ? 'bg-ice-600' : 'bg-graphite')
           }
         >
           <span
             className={
-              'absolute top-0.5 h-4 w-4 rounded-full bg-frost transition-transform ' +
-              (autoAccept ? 'translate-x-4.5' : 'translate-x-0.5')
+              'absolute top-0.5 left-0.5 h-4 w-4 rounded-full bg-frost transition-transform ' +
+              (autoAccept ? 'translate-x-4' : 'translate-x-0')
             }
           />
-        </button>
-      </label>
+        </span>
+      </button>
     </div>
   );
 }

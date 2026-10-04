@@ -73,9 +73,12 @@ body::after {
   background:
     linear-gradient(var(--color-slate), var(--color-slate)) padding-box,
     conic-gradient(from var(--angle), transparent 0 55%, var(--color-ice-300) 78%, var(--color-ice-600) 90%, transparent 100%) border-box;
-  animation: spin 8s linear infinite;
+  /* NB: not named `spin`. Tailwind ships its own `@keyframes spin` that does
+     `transform: rotate(360deg)`, and it wins, which made the selected card
+     physically rotate instead of animating the border gradient. */
+  animation: ice-border-spin 8s linear infinite;
 }
-@keyframes spin { to { --angle: 360deg; } }
+@keyframes ice-border-spin { to { --angle: 360deg; } }
 
 /* 5. Heartbeat line: draws once, then beats */
 .pulse-line path {

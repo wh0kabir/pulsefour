@@ -192,6 +192,9 @@ export default function MapView() {
   const actionLatRef = useRef(actionLat);
   actionLatRef.current = actionLat;
 
+  /** Throttles follow-mode re-fits so the camera does not crawl. */
+  const lastFollowRef = useRef(0);
+
   /** The id currently highlighted, across all three marker layers. */
   const selectedMarkerId = hospital?.id ?? unit?.props.id ?? null;
 
@@ -608,6 +611,9 @@ export default function MapView() {
       instance.fitBounds(areaBounds(), { padding: 14, duration: 500 });
     } else if (framing === 'incident') {
       frameFullBleed(instance, actionLatRef.current, true);
+    } else {
+      // Entering follow: fit now rather than waiting for the action to drift.
+      lastFollowRef.current = 0;
     }
     // actionLat is deliberately NOT a dependency: re-framing on every tick as
     // casualties move would fight the operator panning the map.
@@ -616,9 +622,14 @@ export default function MapView() {
   /**
    * Follow mode: keep the live action in view as ambulances move.
    *
-   * Only nudges the camera when the action has actually drifted out of the
-   * middle of the viewport, and never changes zoom. Re-centring on every tick
-   * would make the map crawl constantly and fight anyone trying to read it.
+   * Fits the bounding box of everything currently in play -- casualties still
+   * on the ground and ambulances actually driving -- rather than chasing their
+   * average position, which sits in the empty space between the incident and
+   * the hospitals and shows neither.
+   *
+   * It only re-fits when the action has left a comfortable inset of the
+   * viewport, and not more than once every few seconds. Re-fitting on every
+   * tick made the camera crawl continuously and fight anyone reading the map.
    */
   useEffect(() => {
     const instance = map.current;
@@ -637,24 +648,40 @@ export default function MapView() {
     }
     if (points.length === 0) return;
 
-    const centre = points.reduce(
-      (acc, [lng, lat]) => [acc[0] + lng / points.length, acc[1] + lat / points.length],
-      [0, 0],
-    );
-
-    const bounds = instance.getBounds();
-    const latSpan = bounds.getNorth() - bounds.getSouth();
-    const lngSpan = bounds.getEast() - bounds.getWest();
-    const current = instance.getCenter();
-
-    // Dead zone: the middle third. Only move once the action leaves it.
-    const drifted =
-      Math.abs(centre[1] - current.lat) > latSpan / 6 ||
-      Math.abs(centre[0] - current.lng) > lngSpan / 6;
-
-    if (drifted) {
-      instance.easeTo({ center: { lng: centre[0], lat: centre[1] }, duration: 900 });
+    let west = Infinity;
+    let east = -Infinity;
+    let south = Infinity;
+    let north = -Infinity;
+    for (const [lng, lat] of points) {
+      if (lng < west) west = lng;
+      if (lng > east) east = lng;
+      if (lat < south) south = lat;
+      if (lat > north) north = lat;
     }
+
+    const view = instance.getBounds();
+    const insetLat = (view.getNorth() - view.getSouth()) * 0.16;
+    const insetLng = (view.getEast() - view.getWest()) * 0.16;
+
+    const outside =
+      north > view.getNorth() - insetLat ||
+      south < view.getSouth() + insetLat ||
+      east > view.getEast() - insetLng ||
+      west < view.getWest() + insetLng;
+
+    const now = Date.now();
+    if (!outside || now - lastFollowRef.current < 2500) return;
+    lastFollowRef.current = now;
+
+    instance.fitBounds(
+      [
+        [west, south],
+        [east, north],
+      ],
+      // maxZoom stops it diving to street level when everything is in one
+      // place, which happens in the first minute before anyone has moved.
+      { padding: 80, maxZoom: 14.5, duration: 900 },
+    );
   }, [world, framing]);
 
   /**
