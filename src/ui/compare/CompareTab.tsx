@@ -51,11 +51,22 @@ const ROWS: Row[] = [
     format: (v) => `${(v * 100).toFixed(0)}%`,
     bar: true,
   },
+  // Counts first: a mean taken over the few patients a strategy managed to
+  // admit will always flatter it. Nearest-hospital posts the best red
+  // admission time here while admitting a third of them.
+  {
+    key: 'red-admitted',
+    label: 'Critical patients who reached a bed',
+    lowerBetter: false,
+    value: (m) => m.admittedBySeverity.red ?? 0,
+    format: (v) => String(Math.round(v)),
+    bar: true,
+  },
   // The headline mean hides the whole point of triage, so break admission
   // time out by severity (section 9.9). Red is what the system is for.
   {
     key: 'admit-red',
-    label: 'Mean time to admission — red',
+    label: 'Mean time to admission — red (read with the count above)',
     lowerBetter: true,
     value: (m) => m.meanAdmissionMinBySeverity.red ?? 0,
     format: (v) => (v > 0 ? `${v.toFixed(1)} min` : '—'),

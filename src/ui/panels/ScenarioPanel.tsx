@@ -22,11 +22,11 @@ export default function ScenarioPanel() {
   const disabled = !world;
 
   return (
-    <section className="flex min-h-0 flex-col bg-slate p-3">
+    <section className="flex flex-col bg-slate p-3" data-tour="scenario">
       <h2 className="text-xs font-medium tracking-wide text-ice-300">Scenario</h2>
       <p className="mt-1 text-[11px] text-mist">Inject event</p>
 
-      <div className="mt-3 flex min-h-0 flex-1 flex-col gap-1.5 overflow-y-auto">
+      <div className="mt-2.5 grid grid-cols-2 gap-1.5">
         <button
           type="button"
           disabled={disabled || !fullest}
@@ -120,12 +120,13 @@ export default function ScenarioPanel() {
           {(world?.congestion ?? 1) < 1 ? 'Clear congestion' : 'Raise congestion'}
         </button>
 
-        <p className="mt-2 text-[11px] leading-relaxed text-mist">
-          Click a road on the map to close or reopen it.
-        </p>
       </div>
 
-      <p className="mt-3 border-t border-hairline pt-2 text-[10px] leading-relaxed text-mist">
+      <p className="mt-2 text-[11px] leading-relaxed text-mist">
+        Click a road on the map to close or reopen it.
+      </p>
+
+      <p className="mt-2.5 border-t border-hairline pt-2 text-[10px] leading-relaxed text-mist">
         In a real deployment these would arrive from traffic data, hospital systems and
         emergency calls. Here they are simulated.
       </p>
@@ -134,6 +135,6 @@ export default function ScenarioPanel() {
 }
 
 const buttonClass =
-  'rounded-md border border-hairline bg-graphite px-2.5 py-1.5 text-left text-xs ' +
+  'rounded-md border border-hairline bg-graphite px-2 py-1.5 text-left text-[11px] leading-tight ' +
   'text-frost transition-colors hover:border-ice-500 disabled:cursor-not-allowed ' +
   'disabled:opacity-40 disabled:hover:border-hairline';

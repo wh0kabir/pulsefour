@@ -408,3 +408,44 @@ describe('the pending queue does not fill with duplicates', () => {
     expect(pairs.length).toBeLessThanOrEqual(state.ambulances.length);
   });
 });
+
+describe('admission metrics are readable (regression)', () => {
+  it('reports how many of each severity reached a bed, not just the mean', async () => {
+    // A strategy that admits only its fastest few posts the best-looking mean
+    // admission time while leaving the rest queued at a full hospital. The
+    // counts are what make that visible.
+    const results = await runComparison({
+      graph: newGraph(),
+      hospitals,
+      scenario,
+      seed: 20171029,
+      minutes: scenario.durationMin,
+    });
+
+    for (const result of results) {
+      const admitted = result.metrics.admittedBySeverity.red;
+      const total = result.metrics.totalBySeverity.red;
+      expect(total).toBeGreaterThan(0);
+      expect(admitted).toBeGreaterThanOrEqual(0);
+      expect(admitted!).toBeLessThanOrEqual(total!);
+
+      // A mean is only reported when somebody was actually admitted.
+      if (result.metrics.meanAdmissionMinBySeverity.red !== undefined) {
+        expect(admitted).toBeGreaterThan(0);
+      }
+    }
+
+    const nearest = results.find((r) => r.strategy === 'nearest')!;
+    const pulse = results.find((r) => r.strategy === 'pulse')!;
+    // The artifact this guards against: nearest looks faster on the mean
+    // precisely because it admits fewer of them.
+    if (
+      (nearest.metrics.meanAdmissionMinBySeverity.red ?? Infinity) <
+      (pulse.metrics.meanAdmissionMinBySeverity.red ?? Infinity)
+    ) {
+      expect(nearest.metrics.admittedBySeverity.red!).toBeLessThan(
+        pulse.metrics.admittedBySeverity.red!,
+      );
+    }
+  }, 180_000);
+});

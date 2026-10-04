@@ -40,7 +40,7 @@ export default function OperatorPanel() {
     world?.hospitals.find((h) => h.id === id)?.name ?? id ?? '—';
 
   return (
-    <section className="flex min-h-0 flex-col bg-slate p-3">
+    <section className="flex min-h-0 flex-col bg-slate p-3" data-tour="operator">
       <div className="flex items-center justify-between gap-2">
         <h2 className="text-xs font-medium tracking-wide text-ice-300">Operator</h2>
         <button

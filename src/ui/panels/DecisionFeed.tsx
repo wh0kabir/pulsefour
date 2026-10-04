@@ -15,7 +15,7 @@ export default function DecisionFeed() {
     world?.hospitals.find((h) => h.id === id)?.name ?? id ?? '—';
 
   return (
-    <section className="flex min-h-0 flex-col bg-slate p-3">
+    <section className="flex min-h-0 flex-col bg-slate p-3" data-tour="decisions">
       <h2 className="text-xs font-medium tracking-wide text-ice-300">Decisions</h2>
       <p className="mt-1 text-[11px] text-mist">Newest first. Open one for the reasoning.</p>
 
